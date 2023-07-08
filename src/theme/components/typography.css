@@ -1,27 +1,82 @@
 .h1 {
-	@apply font-inter font-black text-56 tracking-[-0.1404375rem] tablet:text-82 tablet:tracking-[-0.21075rem] desktop:text-133 desktop:tracking-[-0.32419rem];
+	/* defaults */
+	@apply font-inter font-black;
+
+	/* font size */
+	@apply text-56 tablet:text-82 desktop:text-133;
+
+	/* fluid typography */
+	@apply text-clamp-h1;
+
+	/* letter spacing */
+	@apply tracking-[-0.1404375rem] tablet:tracking-[-0.21075rem] desktop:tracking-[-0.32419rem];
 }
 
 .h2 {
-	@apply font-inter text-riceFlower font-black text-32 tracking-[-0.077625rem] tablet:text-48 tablet:tracking-[-0.115rem] desktop:text-76 desktop:tracking-[-0.18525rem];
+	/* defaults */
+	@apply font-inter text-rice-flower font-black;
+
+	/* font size */
+	@apply text-32 tablet:text-48 desktop:text-76;
+
+	/* fluid typography */
+	@apply text-clamp-h2;
+
+	/* letter spacing */
+	@apply tracking-[-0.077625rem] tablet:tracking-[-0.115rem] desktop:tracking-[-0.18525rem];
 }
 
 .body1 {
-	@apply font-inter text-silver font-normal text-26;
+	/* default */
+	@apply font-inter text-silver font-normal;
+
+	/* font size */
+	@apply text-22 tablet:text-24 desktop:text-26
+
+	/* fluid typography */;
+	@apply text-clamp-body1;
 }
 
 .body2 {
-	@apply font-inter text-tundora font-normal text-24;
+	/* default */
+	@apply font-inter text-tundora font-normal;
+
+	/* font size */
+	@apply text-20 tablet:text-22 desktop:text-24;
+
+	/* fluid typography */
+	@apply text-clamp-body2;
 }
 
 .small {
-	@apply font-inter text-boulder font-light text-18 tracking-[0.00563rem];
+	/* default */
+	@apply font-inter text-boulder font-light;
+
+	/* font size */
+	@apply text-16 tablet:text-18 desktop:text-18;
+
+	/* fluid typography */
+	@apply text-clamp-small;
+
+	/* letter spacing */
+	@apply tracking-[0.004692rem] tablet:tracking-[0.00563rem] desktop:tracking-[0.00563rem];
 }
 
 .code {
-	@apply font-inter text-malibu font-bold text-8;
+	/* default */
+	@apply font-inter text-malibu font-bold;
+
+	/* font size */
+	@apply text-8;
 }
 
 .ascii {
-	@apply font-inter text-hollywoodCerise font-normal text-54;
+	/* default */
+	@apply font-inter text-hollywood-cerise font-normal;
+
+	/* font size */
+	@apply text-27 tablet:text-36 desktop:text-54;
+
+	/* fluid typography */
+	@apply text-clamp-ascii;
 }
