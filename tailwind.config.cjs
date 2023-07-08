@@ -25,6 +25,9 @@ module.exports = {
 				"cod-gray": "#1A1A1A", // screen bg
 				malibu: "#44DBFF", // code
 
+				harlequin: "#53FB2A", // score
+				sunflower: "#E9E11F",
+
 				"hollywood-cerise": "#FF069C", // footer heart
 			},
 			fontSize: {
@@ -54,18 +57,27 @@ module.exports = {
 
 				// small
 				"clamp-small": "clamp(1rem, 0.9212rem + 0.2548vw, 1.125rem)",
-				16 : ["1rem", { lineHeight: "195.5%" }],
+				16: ["1rem", { lineHeight: "195.5%" }],
 				// 18:
 				18: ["1.125rem", { lineHeight: "195.5%" }],
 
 				// code
 				8: ["0.502rem", { lineHeight: "2.195" }],
 
+				// score
+				"clamp-score": "clamp(1.96875rem, 0.7273rem + 4.0127vw, 3.9375rem)",
+				31: ["1.96875rem", { lineHeight: "1" }],
+				42: ["2.625rem", { lineHeight: "1" }],
+				63: ["3.9375rem", { lineHeight: "1" }],
+
 				// footer ascii
 				"clamp-ascii": "clamp(1.6875rem, 0.6234rem + 3.4395vw, 3.375rem)",
 				27: ["1.6875rem", { lineHeight: "162%" }],
 				36: ["2.25rem", { lineHeight: "162%" }],
 				54: ["3.375rem", { lineHeight: "162%" }],
+			},
+			borderRadius: {
+				large: "4.25rem", // 68px
 			},
 		},
 	},

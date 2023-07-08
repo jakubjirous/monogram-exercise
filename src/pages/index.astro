@@ -1,25 +1,34 @@
 ---
-import Container from "@components/container.astro";
 import Layout from "@layouts/Layout.astro";
 import Section from "@components/Section.astro";
+import Container from "../components/container.astro";
+import Score from "../components/score.astro";
 ---
 
 <Layout>
-	<Container>
-		<Section>
-			<h1 class="h1">jamstack <span class="text-red-500">101</span></h1>
+	<Section>
+		<Container>
+			<h1 class="typo-h1 text-center">
+				jamstack <span class="text-red-500">101</span>
+			</h1>
 			<p class="small">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu augue massa, tincidunt proin nunc viverra tristique tempor, ipsum. At lectus vel pretium tempor ut dui vivamus sit.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu augue
+				massa, tincidunt proin nunc viverra tristique tempor, ipsum. At lectus
+				vel pretium tempor ut dui vivamus sit.
 			</p>
-		</Section>
-		<Section>
-			<h2 class="h1 text-white">javascript</h2>
+		</Container>
+	</Section>
+	<Section class="bg-dark-grey">
+		<Container>
+			<h2 class="typo-h1 text-white">javascript</h2>
 			<p class="small text-white">
-				Statically generated pages are brought to life with client-side JavaScript libraries and frameworks, such as Algolia and Next.js.
+				Statically generated pages are brought to life with client-side
+				JavaScript libraries and frameworks, such as Algolia and Next.js.
 			</p>
 
-			<p class="code code-shadow">
-				{`
+			<p class="typo-code code-shadow">
+				{
+					`
 				import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 				class MyDocument extends Document {
@@ -46,35 +55,62 @@ import Section from "@components/Section.astro";
 				}
 
 				export default MyDocument
-				`}
+				`
+				}
 			</p>
+		</Container>
+	</Section>
+	<Section class="bg-dark-grey">
+		<Container>
+			<h2 class="typo-h1 text-white">api</h2>
+			<p class="typo-body2 text-white">
+				At build time, a Jamstack website uses data from one or more APIs to
+				generate markup. These APIs can be a headless CMS like Prismic, a
+				database like Supabase, or even a local JSON file!
+			</p>
+		</Container>
+	</Section>
+	<Section>
+		<Container>
+			<h2 class="typo-h1">markup</h2>
+			<p class="typo-body2">
+				When ready for deployment, a static-site generator such as Astro or
+				Next.js is used to compile the website. The end result is a collection
+				of pre-rendered HTML pages that can be delivered lightning-fast over a
+				CDN like Vercel’s Edge Network.
+			</p>
+		</Container>
+	</Section>
+	<Section class="bg-dark-grey">
+		<Container>
+			<div class="audit-card">
+				<h3 class="typo-h2 text-center">top audit scores</h3>
 
-		</Section>
-		<Section>
-			<h2 class="h1 text-white">api</h2>
-			<p class="body2">
-				At build time, a Jamstack website uses data from one or more APIs to generate markup. These APIs can be a headless CMS like Prismic, a database like Supabase, or even a local JSON file!
-			</p>
-		</Section>
-		<Section>
-			<h2 class="h1">markup</h2>
-			<p class="body2">
-				When ready for deployment, a static-site generator such as Astro or Next.js is used to compile the website. The end result is a collection of pre-rendered HTML pages that can be delivered lightning-fast over a CDN like Vercel’s Edge Network.
-			</p>
-		</Section>
-		<Section>
-			<h3 class="h2">
-				top audit scores
-			</h3>
-			<p class="body1">
-				Search engines, business stakeholders, and end-users gauge a website’s value using metric tools like Google Lighthouse, which measures site performance, SEO, and accessibility.
-			</p>
-			<p class="body1">
-				Performance is one of the most difficult scores to get to 100. This is especially true in a time when users demand JavaScript-heavy, highly-interactive web experiences.
-			</p>
-			<p class="body1">
-				A Jamstack website, delivering SEO-friendly, lean & clean HTML in milliseconds, promises higher search-engine ranking and a more positive, responsive end-user experience.
-			</p>
-		</Section>
-	</Container>
+				<div class="audit-card-ellipse-box">
+					<Score>100</Score>
+					<Score>100</Score>
+					<Score imgClass="opacity-30">100</Score>
+					<Score>100</Score>
+				</div>
+
+				<div class="audit-card-content">
+					<p class="typo-body1">
+						Search engines, business stakeholders, and end-users gauge
+						a&nbsp;website’s value using metric tools like Google Lighthouse,
+						which measures site performance, SEO, and accessibility.
+					</p>
+					<p class="typo-body1">
+						Performance is one of the most difficult scores to get to 100. This
+						is especially true in a time when users demand JavaScript-heavy,
+						highly-interactive web experiences.
+					</p>
+					<p class="typo-body1">
+						A Jamstack website, delivering SEO-friendly, lean & clean HTML in
+						milliseconds, promises higher search-engine ranking and a more
+						positive, responsive end-user experience.
+					</p>
+				</div>
+			</div>
+		</Container>
+	</Section>
 </Layout>

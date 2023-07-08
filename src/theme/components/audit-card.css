@@ -1,0 +1,60 @@
+.audit-card {
+	/* border radius */
+	@apply rounded-large;
+
+	/* padding */
+	@apply pt-14 tablet:pt-20 desktop:pt-28;
+	@apply pb-40 tablet:pb-48 desktop:pb-56;
+
+	background: linear-gradient(
+		346deg,
+		rgba(255, 255, 255, 0.02) 0%,
+		rgba(123, 245, 93, 0.11) 100%
+	);
+
+	backdrop-filter: blur(60px);
+
+	/* translate Y */
+	@apply translate-y-[-4.25rem];
+}
+
+.audit-card-content {
+	/* flex */
+	@apply flex flex-col gap-8;
+
+	/* padding */
+	@apply px-8 tablet:px-20 desktop:px-48;
+
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-image: linear-gradient(135deg, #8bbd7f, #6f6f6f);
+}
+
+.audit-card-ellipse-box {
+	/* flex */
+	@apply flex justify-center;
+	@apply flex-col tablet:flex-row;
+	@apply flex-wrap desktop:flex-nowrap;
+	@apply gap-14 tablet:gap-16 desktop:gap-14;
+
+	/* padding */
+	@apply tablet:px-16;
+
+	/* margin */
+	@apply mt-20 mb-24;
+	@apply desktop:mt-24 desktop:mb-28;
+}
+
+.score {
+	/* default */
+	@apply relative;
+
+	/* flex	*/
+	@apply flex justify-center items-center;
+
+	/* dimensions */
+	@apply min-h-[14.125rem] min-w-[14.125rem] -m-[3.6rem];
+	@apply tablet:min-h-[18.125rem] tablet:min-w-[18.125rem];
+	@apply desktop:min-h-[21.125rem] desktop:min-w-[21.125rem];
+}

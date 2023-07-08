@@ -1,4 +1,4 @@
-.h1 {
+.typo-h1 {
 	/* defaults */
 	@apply font-inter font-black;
 
@@ -12,7 +12,7 @@
 	@apply tracking-[-0.1404375rem] tablet:tracking-[-0.21075rem] desktop:tracking-[-0.32419rem];
 }
 
-.h2 {
+.typo-h2 {
 	/* defaults */
 	@apply font-inter text-rice-flower font-black;
 
@@ -26,9 +26,9 @@
 	@apply tracking-[-0.077625rem] tablet:tracking-[-0.115rem] desktop:tracking-[-0.18525rem];
 }
 
-.body1 {
+.typo-body1 {
 	/* default */
-	@apply font-inter text-silver font-normal;
+	@apply font-inter text-silver font-light;
 
 	/* font size */
 	@apply text-22 tablet:text-24 desktop:text-26
@@ -37,9 +37,9 @@
 	@apply text-clamp-body1;
 }
 
-.body2 {
+.typo-body2 {
 	/* default */
-	@apply font-inter text-tundora font-normal;
+	@apply font-inter text-tundora font-light;
 
 	/* font size */
 	@apply text-20 tablet:text-22 desktop:text-24;
@@ -48,7 +48,7 @@
 	@apply text-clamp-body2;
 }
 
-.small {
+.typo-small {
 	/* default */
 	@apply font-inter text-boulder font-light;
 
@@ -62,7 +62,7 @@
 	@apply tracking-[0.004692rem] tablet:tracking-[0.00563rem] desktop:tracking-[0.00563rem];
 }
 
-.code {
+.typo-code {
 	/* default */
 	@apply font-inter text-malibu font-bold;
 
@@ -70,7 +70,21 @@
 	@apply text-8;
 }
 
-.ascii {
+.typo-score {
+	/* default */
+	@apply font-inter text-rice-flower font-bold;
+
+	/* font size */
+	@apply text-31 tablet:text-42 desktop:text-63;
+
+	/* fluid typography */
+	@apply text-clamp-score;
+
+	/* letter spacing */
+	@apply tracking-[-0.07678rem] tablet:tracking-[-0.102375rem] desktop:tracking-[-0.15356rem];
+}
+
+.typo-ascii {
 	/* default */
 	@apply font-inter text-hollywood-cerise font-normal;
 

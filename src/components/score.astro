@@ -1,0 +1,28 @@
+---
+import ellipse from "../assets/score-ellipse.svg";
+
+export interface Props {
+	wrapperClass?: string;
+	imgClass?: string;
+	scoreClass?: string;
+}
+
+const {
+	wrapperClass: className,
+	imgClass: className2,
+	scoreClass: className3,
+} = Astro.props;
+---
+
+<div class:list={["score", className]}>
+	<img src={ellipse} alt="Score ellipse" class:list={["absolute h-full w-auto", className2]} />
+
+	<div
+		class:list={[
+			"typo-score score-shadow",
+			className3,
+		]}
+	>
+		<slot />
+	</div>
+</div>

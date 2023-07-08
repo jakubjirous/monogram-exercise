@@ -1,3 +1,9 @@
 .code-shadow {
 	text-shadow: 0 0 73.02230834960938px theme("colors.malibu");
 }
+
+.score-shadow {
+	text-shadow: 0px 0px 61px theme("colors.harlequin"),
+		0px 0px 42px theme("colors.sunflower"),
+		0px 0px 12px theme("colors.harlequin");
+}
