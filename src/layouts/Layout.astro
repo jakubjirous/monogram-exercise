@@ -1,68 +1,59 @@
 ---
 import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
-import Navbar from "@components/navbar/navbar.astro";
-import "@fontsource/inter/variable.css";
+import "@fontsource-variable/inter";
+import "../theme/globals.css";
 
 export interface Props {
-  title: string;
+	title?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
 const resolvedImageWithDomain = new URL(
-  "/opengraph.jpg",
-  Astro.site
+	"/opengraph.jpg",
+	Astro.site
 ).toString();
 
 const { title } = Astro.props;
 
-const makeTitle = title
-  ? title + " | " + "Astroship"
-  : "Astroship - Starter Template for Astro with Tailwind CSS";
+const seoTitle = title ? `${title} | Monogram Exercise` : "Monogram Exercise";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
 
-    <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
-    <SEO
-      title={makeTitle}
-      description="Astroship is a starter website template for Astro built with TailwindCSS."
-      canonical={canonicalURL}
-      twitter={{
-        creator: "@surjithctly",
-        site: "@web3templates",
-        card: "summary_large_image",
-      }}
-      openGraph={{
-        basic: {
-          url: canonicalURL,
-          type: "website",
-          title: `Astroship - Starter Template for Astro`,
-          image: resolvedImageWithDomain,
-        },
-        image: {
-          alt: "Astroship Homepage Screenshot",
-        },
-      }}
-    />
-  </head>
-  <body>
-    <Navbar />
-    <slot />
-    <Footer />
-    <style is:global>
-      /* Improve Page speed */
-      /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
-      img {
-        content-visibility: auto;
-      }
-    </style>
-  </body>
+		<SEO
+			title={seoTitle}
+			description="Front-End Development Exercise for Monogram.io"
+			canonical={canonicalURL}
+			twitter={{
+				creator: "@jakubjirous",
+				site: "@monogram-exercise",
+				card: "summary_large_image",
+			}}
+			openGraph={{
+				basic: {
+					url: canonicalURL,
+					type: "website",
+					title: seoTitle,
+					image: resolvedImageWithDomain,
+				},
+				image: {
+					alt: seoTitle,
+				},
+			}}
+		/>
+	</head>
+	<body>
+		<main>
+			<slot />
+		</main>
+		<Footer />
+	</body>
 </html>

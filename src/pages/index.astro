@@ -1,18 +1,80 @@
 ---
 import Container from "@components/container.astro";
-import Cta from "@components/cta.astro";
-import Features from "@components/features.astro";
-import Footer from "@components/footer.astro";
-import Hero from "@components/hero.astro";
-import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
+import Section from "@components/Section.astro";
 ---
 
-<Layout title="">
-  <Container>
-    <Hero />
-    <Features />
-    <Logos />
-    <Cta />
-  </Container>
+<Layout>
+	<Container>
+		<Section>
+			<h1 class="h1">jamstack <span class="text-red-500">101</span></h1>
+			<p class="small">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu augue massa, tincidunt proin nunc viverra tristique tempor, ipsum. At lectus vel pretium tempor ut dui vivamus sit.
+			</p>
+		</Section>
+		<Section>
+			<h2 class="h1 text-white">javascript</h2>
+			<p class="small text-white">
+				Statically generated pages are brought to life with client-side JavaScript libraries and frameworks, such as Algolia and Next.js.
+			</p>
+
+			<p class="code code-shadow">
+				{`
+				import Document, { Html, Head, Main, NextScript } from 'next/document'
+
+				class MyDocument extends Document {
+				\trender() {
+				\t\treturn (
+				\t\t\t<Html lang="en">
+				\t\t\t\t<Head>
+				\t\t\t\t\t{/*Fonts*/}
+				\t\t\t\t\t<link rel="preconnect" href="https://rsms.me" crossOrigin="anonymous" />
+				\t\t\t\t\t<link rel="preconnect" href="https://kit.fontawesome.com" crossOrigin="anonymous" />
+				\t\t\t\t\t<link rel="preload" href="https://rsms.me/inter/inter.css" as="style" />
+				\t\t\t\t\t<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+				\t\t\t\t\t<noscript>
+				\t\t\t\t\t\t<link rel="stylesheet" type="text/css" href="https://rsms.me/inter/inter.css" />
+				\t\t\t\t\t</noscript>
+				\t\t\t\t</Head>
+				\t\t\t\t<body>
+				\t\t\t\t\t<Main />
+				\t\t\t\t\t<NextScript />
+				\t\t\t\t</body>
+				\t\t\t</Html>
+				\t\t)
+				\t}
+				}
+
+				export default MyDocument
+				`}
+			</p>
+
+		</Section>
+		<Section>
+			<h2 class="h1 text-white">api</h2>
+			<p class="body2">
+				At build time, a Jamstack website uses data from one or more APIs to generate markup. These APIs can be a headless CMS like Prismic, a database like Supabase, or even a local JSON file!
+			</p>
+		</Section>
+		<Section>
+			<h2 class="h1">markup</h2>
+			<p class="body2">
+				When ready for deployment, a static-site generator such as Astro or Next.js is used to compile the website. The end result is a collection of pre-rendered HTML pages that can be delivered lightning-fast over a CDN like Vercel’s Edge Network.
+			</p>
+		</Section>
+		<Section>
+			<h3 class="h2">
+				top audit scores
+			</h3>
+			<p class="body1">
+				Search engines, business stakeholders, and end-users gauge a website’s value using metric tools like Google Lighthouse, which measures site performance, SEO, and accessibility.
+			</p>
+			<p class="body1">
+				Performance is one of the most difficult scores to get to 100. This is especially true in a time when users demand JavaScript-heavy, highly-interactive web experiences.
+			</p>
+			<p class="body1">
+				A Jamstack website, delivering SEO-friendly, lean & clean HTML in milliseconds, promises higher search-engine ranking and a more positive, responsive end-user experience.
+			</p>
+		</Section>
+	</Container>
 </Layout>

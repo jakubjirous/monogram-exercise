@@ -1,0 +1,27 @@
+.h1 {
+	@apply font-inter font-black text-56 tracking-[-0.1404375rem] tablet:text-82 tablet:tracking-[-0.21075rem] desktop:text-133 desktop:tracking-[-0.32419rem];
+}
+
+.h2 {
+	@apply font-inter text-riceFlower font-black text-32 tracking-[-0.077625rem] tablet:text-48 tablet:tracking-[-0.115rem] desktop:text-76 desktop:tracking-[-0.18525rem];
+}
+
+.body1 {
+	@apply font-inter text-silver font-normal text-26;
+}
+
+.body2 {
+	@apply font-inter text-tundora font-normal text-24;
+}
+
+.small {
+	@apply font-inter text-boulder font-light text-18 tracking-[0.00563rem];
+}
+
+.code {
+	@apply font-inter text-malibu font-bold text-8;
+}
+
+.ascii {
+	@apply font-inter text-hollywoodCerise font-normal text-54;
+}
