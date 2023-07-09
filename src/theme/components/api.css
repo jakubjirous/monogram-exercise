@@ -1,0 +1,22 @@
+.api {
+	/* defaults */
+	@apply relative bg-dark-grey;
+
+	/* sections overlap */
+	@apply pb-[60%];
+	@apply tablet:pb-[50%];
+	@apply desktop:pb-[40rem];
+}
+
+.api-content {
+	/* defaults */
+	@apply typo-body2;
+
+	@apply text-center text-white;
+
+	/* margin */
+	@apply mt-8 tablet:mt-12 desktop:mt-16;
+
+	/* width */
+	@apply max-w-[45.625rem] mx-auto;
+}

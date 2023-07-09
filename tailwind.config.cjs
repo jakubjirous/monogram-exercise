@@ -83,7 +83,8 @@ module.exports = {
 				54: ["3.375rem", { lineHeight: "162%" }],
 			},
 			borderRadius: {
-				large: "4.25rem", // 68px
+				68: "4.25rem",
+				914: "57.125rem",
 			},
 			blur: {
 				60: "60px",

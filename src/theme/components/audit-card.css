@@ -1,6 +1,6 @@
 .audit-card {
 	/* border radius */
-	@apply rounded-large;
+	@apply rounded-68;
 
 	/* padding */
 	@apply px-8;

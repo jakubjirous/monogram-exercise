@@ -58,7 +58,7 @@
 	@apply h-[30rem];
 
 	/* border */
-	@apply rounded-[4.25rem];
+	@apply rounded-68;
 
 	/* blur */
 	@apply backdrop-blur-60;
