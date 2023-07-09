@@ -1,12 +1,21 @@
 ---
-import Layout from "@layouts/Layout.astro";
-import Section from "@components/Section.astro";
+import Layout from "@layouts/layout.astro";
+import Section from "@components/section.astro";
 import Brick from "@components/brick.astro";
 import Container from "@components/container.astro";
 import Score from "@components/score.astro";
 import ArtBox from "@components/art-box.astro";
 
 import sphere from "../assets/sphere.svg";
+
+import logo1 from "../assets/logo1.svg";
+import logo2 from "../assets/logo2.svg";
+import logo3 from "../assets/logo3.svg";
+import logo4 from "../assets/logo4.svg";
+import logo5 from "../assets/logo5.svg";
+import logo6 from "../assets/logo6.svg";
+import logo7 from "../assets/logo7.svg";
+import logo8 from "../assets/logo8.svg";
 ---
 
 <Layout>
@@ -64,6 +73,44 @@ import sphere from "../assets/sphere.svg";
 			</p>
 		</Container>
 	</Section>
+
+	<Section class="logo">
+		<Container>
+			<div class="logo-grid">
+				<div class="logo1">
+					<img src={logo1} alt="Next.js logo" />
+				</div>
+				<div class="logo2">
+					<img src={logo2} alt="React logo" class="desktop:translate-y-[62px]" />
+				</div>
+				<div class="logo3">
+					<img src={logo3} alt="Next.js logo" class="desktop:translate-y-[-113px]" />
+
+				</div>
+				<div class="logo4">
+					<img src={logo4} alt="React logo" class="desktop:translate-y-[14px]" />
+
+				</div>
+				<div class="logo5">
+					<img src={logo5} alt="Svelte logo" class="desktop:translate-y-[-32px]" />
+
+				</div>
+				<div class="logo6">
+					<img src={logo6} alt="Vue.js logo" class="desktop:translate-y-[-20px]" />
+
+				</div>
+				<div class="logo7">
+					<img src={logo7} alt="React logo" class="desktop:translate-y-[-100px]" />
+
+				</div>
+				<div class="logo8">
+					<img src={logo8} alt="Svelte logo" class="desktop:translate-y-[10px]" />
+
+				</div>
+			</div>
+		</Container>
+	</Section>
+
 	<Section class="api">
 		<Container>
 			<h2 class="typo-h1 text-white text-center">api</h2>

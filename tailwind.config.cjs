@@ -89,6 +89,17 @@ module.exports = {
 			blur: {
 				60: "60px",
 			},
+			gridTemplateRows: {
+				5: "repeat(5, minmax(0, 15rem))",
+				7: "repeat(7, minmax(0, 12rem))",
+				8: "repeat(8, minmax(0, 14.5rem))",
+			},
+			gridRowStart: {
+				5: "5",
+				6: "6",
+				7: "7",
+				8: "8",
+			},
 		},
 	},
 };

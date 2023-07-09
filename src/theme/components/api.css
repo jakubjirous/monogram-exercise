@@ -11,7 +11,6 @@
 .api-content {
 	/* defaults */
 	@apply typo-body2;
-
 	@apply text-center text-white;
 
 	/* margin */
