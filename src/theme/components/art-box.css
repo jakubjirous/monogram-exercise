@@ -1,0 +1,79 @@
+.art-box {
+	/* position */
+	@apply relative;
+
+	/* flex */
+	@apply flex;
+	@apply flex-col tablet:flex-row;
+	@apply tablet:justify-end;
+
+	/* margin */
+	@apply mt-7 tablet:mt-14 desktop:mt-7;
+}
+
+.art-box-group {
+	/* flex	*/
+	@apply flex;
+	@apply flex-row;
+	@apply justify-end;
+	@apply gap-[2.87rem];
+}
+
+.art-box-blurry-group {
+	/* position */
+	@apply absolute;
+	@apply bottom-0 right-0;
+
+	/* flex	*/
+	@apply flex;
+	@apply flex-row;
+	@apply items-end;
+	@apply gap-[2.87rem];
+
+	/* translate */
+	@apply translate-y-[10.25rem] translate-x-[10.25rem];
+}
+
+.art-box-image-1st {
+	/* defaults */
+	@apply w-[17.5rem];
+	@apply h-[39.3215rem];
+
+	/* visibility */
+	@apply hidden tablet:inline-flex;
+}
+
+.art-box-image-2nd {
+	/* defaults */
+	@apply w-[17.375rem];
+	@apply h-[41.875rem];
+}
+
+.art-box-blurry-1st {
+	/* defaults */
+	@apply w-full h-auto;
+
+	/* dimensions */
+	@apply w-[17.5rem];
+	@apply h-[30rem];
+
+	/* border */
+	@apply rounded-[4.25rem];
+
+	/* blur */
+	@apply backdrop-blur-60;
+
+	/* visibility */
+	@apply hidden tablet:inline-flex;
+}
+
+.art-box-blurry-2nd {
+	@apply art-box-blurry-1st;
+
+	/* dimensions */
+	@apply w-[17.5rem];
+	@apply h-[41.375rem];
+
+	/* visibility */
+	@apply inline-flex;
+}

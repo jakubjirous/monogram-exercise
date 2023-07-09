@@ -2,4 +2,6 @@
 @import "components/container.css";
 @import "components/shadow.css";
 
+@import "components/markup.css";
+@import "components/art-box.css";
 @import "components/audit-card.css";

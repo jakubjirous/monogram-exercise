@@ -3,6 +3,7 @@
 	@apply rounded-large;
 
 	/* padding */
+	@apply px-8;
 	@apply pt-14 tablet:pt-20 desktop:pt-28;
 	@apply pb-40 tablet:pb-48 desktop:pb-56;
 
@@ -12,7 +13,7 @@
 		rgba(123, 245, 93, 0.11) 100%
 	);
 
-	backdrop-filter: blur(60px);
+	@apply backdrop-blur-60;
 
 	/* translate Y */
 	@apply translate-y-[-4.25rem];
@@ -54,7 +55,7 @@
 	@apply flex justify-center items-center;
 
 	/* dimensions */
-	@apply min-h-[14.125rem] min-w-[14.125rem] -m-[3.6rem];
-	@apply tablet:min-h-[18.125rem] tablet:min-w-[18.125rem];
+	@apply min-h-[14.125rem] min-w-[14.125rem] -my-[3.6rem];
+	@apply tablet:min-h-[18.125rem] tablet:min-w-[18.125rem] tablet:-mx-[3.6rem];
 	@apply desktop:min-h-[21.125rem] desktop:min-w-[21.125rem];
 }

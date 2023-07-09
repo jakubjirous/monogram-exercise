@@ -1,13 +1,17 @@
 ---
 export interface Props {
 	class?: string;
+	noPadding: boolean;
 }
 
-const { class: className } = Astro.props;
+const { class: className, noPadding } = Astro.props;
 ---
 
 <div
-	class:list={["container mx-auto px-4 tablet:px-8 desktop:px-16", className]}
+	class:list={[
+		`container mx-auto ${noPadding ? "" : "px-4 tablet:px-8 desktop:px-16"}`,
+		className,
+	]}
 >
 	<slot />
 </div>

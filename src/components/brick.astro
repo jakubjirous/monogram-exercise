@@ -1,0 +1,14 @@
+---
+export interface Props {
+	wrapperClass?: string;
+	svgClass?: string;
+}
+
+const { wrapperClass: wrapperClassName, svgClass: svgClassName } = Astro.props;
+---
+
+<div class:list={["brick", wrapperClassName]}>
+	<svg xmlns="http://www.w3.org/2000/svg" width="320" height="57" fill="none">
+		<rect width="320" height="57" rx="7" class={svgClassName}></rect>
+	</svg>
+</div>

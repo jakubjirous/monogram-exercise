@@ -10,6 +10,9 @@
 
 	/* letter spacing */
 	@apply tracking-[-0.1404375rem] tablet:tracking-[-0.21075rem] desktop:tracking-[-0.32419rem];
+
+	/* align */
+	@apply text-center tablet:text-left;
 }
 
 .typo-h2 {
@@ -24,6 +27,9 @@
 
 	/* letter spacing */
 	@apply tracking-[-0.077625rem] tablet:tracking-[-0.115rem] desktop:tracking-[-0.18525rem];
+
+	/* align */
+	@apply text-center tablet:text-left;
 }
 
 .typo-body1 {
@@ -35,6 +41,9 @@
 
 	/* fluid typography */;
 	@apply text-clamp-body1;
+
+	/* align */
+	@apply text-center tablet:text-left;
 }
 
 .typo-body2 {
@@ -46,6 +55,9 @@
 
 	/* fluid typography */
 	@apply text-clamp-body2;
+
+	/* align */
+	@apply text-center tablet:text-left;
 }
 
 .typo-small {
@@ -60,6 +72,9 @@
 
 	/* letter spacing */
 	@apply tracking-[0.004692rem] tablet:tracking-[0.00563rem] desktop:tracking-[0.00563rem];
+
+	/* align */
+	@apply text-center tablet:text-left;
 }
 
 .typo-code {

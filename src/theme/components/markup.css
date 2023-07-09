@@ -1,0 +1,34 @@
+.markup {
+	/* defaults */
+	@apply relative overflow-hidden;
+
+	/* height */
+	@apply min-h-[88rem] tablet:min-h-[104rem] desktop:min-h-[80rem];
+}
+
+.markup-content {
+	/* default */
+	@apply typo-body2;
+
+	/* margin */
+	@apply mt-8 tablet:mt-12 desktop:mt-16;
+
+	/* padding */
+	@apply desktop:pr-14;
+}
+
+.wall {
+	/* position */
+	@apply absolute bottom-0 overflow-x-hidden;
+
+	/* height */
+	@apply min-h-[42rem];
+
+	/* flex */
+	@apply flex flex-col items-center justify-end w-full;
+}
+
+.wall-row {
+	/* flex */
+	@apply flex justify-center w-full;
+}

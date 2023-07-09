@@ -8,21 +8,20 @@ export interface Props {
 }
 
 const {
-	wrapperClass: className,
-	imgClass: className2,
-	scoreClass: className3,
+	wrapperClass: wrapperClassName,
+	imgClass: imgClassName,
+	scoreClass: scoreClassName,
 } = Astro.props;
 ---
 
-<div class:list={["score", className]}>
-	<img src={ellipse} alt="Score ellipse" class:list={["absolute h-full w-auto", className2]} />
+<div class:list={["score", wrapperClassName]}>
+	<img
+		src={ellipse}
+		alt="Score ellipse"
+		class:list={["absolute h-full w-auto", imgClassName]}
+	/>
 
-	<div
-		class:list={[
-			"typo-score score-shadow",
-			className3,
-		]}
-	>
+	<div class:list={["typo-score score-shadow", scoreClassName]}>
 		<slot />
 	</div>
 </div>

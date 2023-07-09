@@ -29,6 +29,12 @@ module.exports = {
 				sunflower: "#E9E11F",
 
 				"hollywood-cerise": "#FF069C", // footer heart
+
+				// bricks
+				endeavour: "#0165B1",
+				thunderbird: "#D12510",
+				koromiko: "#FEC05C",
+				"gull-gray": "#97B1B2",
 			},
 			fontSize: {
 				// heading 1
@@ -78,6 +84,9 @@ module.exports = {
 			},
 			borderRadius: {
 				large: "4.25rem", // 68px
+			},
+			blur: {
+				60: "60px",
 			},
 		},
 	},
