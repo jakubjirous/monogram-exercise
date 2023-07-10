@@ -1,0 +1,28 @@
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+		visibility: visible;
+	}
+}
+
+.typed {
+	visibility: hidden;
+}
+
+.typed pre {
+	--time: 1s;
+	--delay: calc(var(--i) * var(--time));
+
+	overflow: hidden;
+	animation-name: typing;
+	animation-duration: 2s;
+	animation-timing-function: steps(200, end);
+	animation-iteration-count: 1;
+
+	animation-delay: var(--delay);
+	visibility: hidden;
+	animation-fill-mode: forwards;
+}

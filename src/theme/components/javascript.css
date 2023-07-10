@@ -24,12 +24,6 @@
 	@apply tablet:translate-y-32 desktop:translate-y-44;
 }
 
-.javascript-heading {
-	/* generic */
-	@apply typo-h1;
-	@apply text-center text-white;
-}
-
 .javascript-content {
 	/* defaults */
 	@apply typo-small;
@@ -85,7 +79,7 @@
 
 	@apply mt-[5vw] ml-[5vw];
 	@apply tablet:mt-[4vw] tablet:ml-[4vw];
-	@apply desktop:mt-[5vw] desktop:ml-[4vw];
+	@apply desktop:mt-[10%] desktop:ml-[10%];
 }
 
 .computer-arrow {

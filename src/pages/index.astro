@@ -11,8 +11,6 @@ import computer from "../assets/bg-computer.png";
 import arrow from "../assets/arrow-hero.svg";
 import arrow2 from "../assets/arrow-js.svg";
 
-import { code } from "../utils/code";
-
 import logo1 from "../assets/logo1.svg";
 import logo2 from "../assets/logo2.svg";
 import logo3 from "../assets/logo3.svg";
@@ -28,9 +26,10 @@ import sphere from "../assets/sphere.svg";
 <Layout>
 	<Section>
 		<Container>
-			<h1 class="typo-h1">
+			<h1 class="typo-h1 tablet:text-left">
 				jamstack <span class="text-red-500">101</span>
 			</h1>
+
 			<p class="typo-small">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu augue
 				massa, tincidunt proin nunc viverra tristique tempor, ipsum. At lectus
@@ -41,7 +40,7 @@ import sphere from "../assets/sphere.svg";
 
 	<Section class="javascript">
 		<Container>
-			<h2 class="javascript-heading">javascript</h2>
+			<h2 class="typo-h1 text-center text-white">javascript</h2>
 			<p class="javascript-content">
 				Statically generated pages are brought to life with client-side
 				JavaScript libraries and frameworks, such as Algolia and Next.js.
@@ -52,7 +51,36 @@ import sphere from "../assets/sphere.svg";
 					<img src={computer.src} alt="Retro computer" />
 					<div class="computer-terminal">
 						<div class="computer-code">
-							<pre><code>{code}</code></pre>
+							<code class="typed">
+								<pre style="--i: 0">{`import Document, { Html, Head, Main, NextScript } from 'next/document'`}</pre>
+								<pre style="--i: 1">{`
+								`}</pre>
+								<pre style="--i: 2">{`class MyDocument extends Document {`}</pre>
+								<pre style="--i: 3">{`  render() {`}</pre>
+								<pre style="--i: 4">{`    return (`}</pre>
+								<pre style="--i: 5">{`      <Html lang="en">`}</pre>
+								<pre style="--i: 6">{`        <Head>`}</pre>
+								<pre style="--i: 7">{`          {/*Fonts*/}`}</pre>
+								<pre style="--i: 8">{`          <link rel="preconnect" href="https://rsms.me" crossOrigin="anonymous" />`}</pre>
+								<pre style="--i: 9">{`          <link rel="preconnect" href="https://kit.fontawesome.com" crossOrigin="anonymous" />`}</pre>
+								<pre style="--i: 10">{`          <link rel="preload" href="https://rsms.me/inter/inter.css" as="style" />`}</pre>
+								<pre style="--i: 11">{`          <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />`}</pre>
+								<pre style="--i: 12">{`          <noscript>`}</pre>
+								<pre style="--i: 13">{`            <link rel="stylesheet" type="text/css" href="https://rsms.me/inter/inter.css" />`}</pre>
+								<pre style="--i: 14">{`          </noscript>`}</pre>
+								<pre style="--i: 15">{`        </Head>`}</pre>
+								<pre style="--i: 16">{`        <body>`}</pre>
+								<pre style="--i: 17">{`          <Main />`}</pre>
+								<pre style="--i: 18">{`          <NextScript />`}</pre>
+								<pre style="--i: 19">{`        </body>`}</pre>
+								<pre style="--i: 20">{`      </Html>`}</pre>
+								<pre style="--i: 21">{`    )`}</pre>
+								<pre style="--i: 22">{`  }`}</pre>
+								<pre style="--i: 23">{`}`}</pre>
+								<pre style="--i: 24">{`
+								`}</pre>
+								<pre style="--i: 25">{`export default MyDocument`}</pre>
+							</code>
 						</div>
 					</div>
 				</div>
@@ -146,7 +174,7 @@ import sphere from "../assets/sphere.svg";
 		<Container>
 			<div class="flex flex-col desktop:flex-row desktop:gap-16">
 				<div class="flex flex-col desktop:basis-1/2">
-					<h2 class="typo-h1">markup</h2>
+					<h2 class="typo-h1 tablet:text-left">markup</h2>
 					<p class="markup-content">
 						When ready for deployment, a static-site generator such as Astro or
 						Next.js is used to compile the website. The end result is a
