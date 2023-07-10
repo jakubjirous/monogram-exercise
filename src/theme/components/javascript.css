@@ -1,6 +1,6 @@
 .javascript {
 	/* defaults */
-	@apply relative;
+	@apply relative z-50;
 
 	/* background image	*/
 	@apply bg-[url("../../assets/bg-square.svg")] bg-no-repeat bg-top;

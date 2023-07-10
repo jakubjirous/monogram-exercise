@@ -1,0 +1,13 @@
+.line {
+	/* position */
+	@apply fixed left-1/2;
+
+	/* height */
+	@apply h-screen;
+
+	/* border */
+	@apply border border-dashed border-mercury/20;
+
+	/* z-index */
+	@apply z-10;
+}

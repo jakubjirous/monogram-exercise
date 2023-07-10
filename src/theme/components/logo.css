@@ -1,6 +1,6 @@
 .logo {
 	/* defaults */
-	@apply bg-dark-grey;
+	@apply bg-dark-grey overflow-hidden;
 
 	/* sections overlap */
 	@apply pt-20 tablet:pt-52 desktop:pt-32;

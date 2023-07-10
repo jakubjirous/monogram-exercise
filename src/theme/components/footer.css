@@ -1,0 +1,21 @@
+.footer {
+	/* defaults */
+	@apply bg-dark-grey;
+}
+
+.footer-container {
+	/* flex */
+	@apply flex flex-col justify-center items-center gap-6;
+
+	/* height */
+	@apply min-h-[22.5rem] tablet:min-h-[30rem] desktop:min-h-[34.81rem];
+
+	/* z-index */
+	@apply relative z-50;
+}
+
+.footer-content {
+	/* defaults */
+	@apply typo-body2;
+	@apply text-white text-center;
+}

@@ -19,7 +19,9 @@
 	@apply flex;
 	@apply flex-row;
 	@apply justify-end;
-	@apply gap-[2.87rem];
+	@apply gap-[2.57rem];
+
+	@apply desktop:-mr-1;
 }
 
 .art-box-blurry-group {
@@ -31,7 +33,7 @@
 	@apply flex;
 	@apply flex-row;
 	@apply items-end;
-	@apply gap-[2.87rem];
+	@apply gap-[2.57rem];
 
 	/* translate */
 	@apply translate-y-[10.25rem] translate-x-[10.25rem];

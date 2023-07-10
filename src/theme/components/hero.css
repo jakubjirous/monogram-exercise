@@ -1,6 +1,6 @@
 .hero {
 	/* defaults */
-	@apply relative overflow-hidden;
+	@apply relative overflow-hidden z-50;
 
 	/* margin */
 	@apply tablet:mx-8 desktop:mx-16;
@@ -8,7 +8,7 @@
 	/* padding */
 	@apply pt-10;
 	@apply tablet:pt-20;
-	@apply desktop:pt-40 pb-40;
+	@apply desktop:pt-40 pb-56;
 }
 
 .hero-pattern {

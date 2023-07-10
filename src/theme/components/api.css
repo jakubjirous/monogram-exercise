@@ -1,11 +1,19 @@
 .api {
 	/* defaults */
-	@apply relative bg-dark-grey;
+	@apply bg-dark-grey;
 
 	/* sections overlap */
 	@apply pb-[60%];
 	@apply tablet:pb-[50%];
-	@apply desktop:pb-[40rem];
+	@apply desktop:pb-[34rem];
+}
+
+.api-heading {
+	/* defaults */
+	@apply typo-h1;
+	@apply text-white text-center;
+
+	@apply relative z-50;
 }
 
 .api-content {
@@ -17,5 +25,7 @@
 	@apply mt-8 tablet:mt-12 desktop:mt-16;
 
 	/* width */
-	@apply max-w-[45.625rem] mx-auto;
+	@apply max-w-[45.525rem] mx-auto;
+
+	@apply relative z-50;
 }

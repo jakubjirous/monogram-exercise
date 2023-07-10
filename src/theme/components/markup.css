@@ -1,9 +1,12 @@
 .markup {
 	/* defaults */
-	@apply relative overflow-hidden;
+	@apply relative overflow-hidden z-50;
 
 	/* height */
 	@apply tablet:min-h-[78rem] desktop:min-h-[80rem];
+
+	/* margin */
+	@apply mt-[50vw] desktop:mt-[40rem];
 }
 
 .markup-content {
@@ -13,8 +16,8 @@
 	/* margin */
 	@apply mt-8 tablet:mt-12 desktop:mt-16;
 
-	/* padding */
-	@apply desktop:pr-14;
+	/* width */
+	@apply max-w-[30rem] mx-auto tablet:mx-0;
 }
 
 .wall {

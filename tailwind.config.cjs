@@ -35,6 +35,8 @@ module.exports = {
 				thunderbird: "#D12510",
 				koromiko: "#FEC05C",
 				"gull-gray": "#97B1B2",
+
+				mercury: "#E8E8E8", // background lines
 			},
 			fontSize: {
 				// heading 1

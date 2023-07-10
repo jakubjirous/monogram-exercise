@@ -1,0 +1,12 @@
+.score {
+	/* default */
+	@apply relative;
+
+	/* flex	*/
+	@apply flex justify-center items-center;
+
+	/* dimensions */
+	@apply min-h-[14.125rem] min-w-[14.125rem] -my-[3.6rem];
+	@apply tablet:min-h-[18.125rem] tablet:min-w-[18.125rem] tablet:-mx-[3.6rem];
+	@apply desktop:min-h-[21.125rem] desktop:min-w-[21.125rem];
+}

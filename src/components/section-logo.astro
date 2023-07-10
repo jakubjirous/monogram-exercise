@@ -16,7 +16,13 @@ import logo8 from "../assets/logo8.svg";
 	<Container>
 		<div class="logo-grid">
 			<div class="logo1">
-				<img src={logo1.src} alt="Next.js logo" width="307" height="360" />
+				<img
+					src={logo1.src}
+					alt="Next.js logo"
+					class="tablet:translate-y-[2rem] desktop:translate-x-[2rem] desktop:translate-y-0"
+					width="307"
+					height="360"
+				/>
 			</div>
 			<div class="logo2">
 				<img
@@ -67,10 +73,7 @@ import logo8 from "../assets/logo8.svg";
 				/>
 			</div>
 			<div class="logo8">
-				<img
-					src={logo8.src}
-					alt="Svelte logo"
-				/>
+				<img src={logo8.src} alt="Svelte logo" />
 			</div>
 		</div>
 	</Container>

@@ -8,7 +8,12 @@ import pattern from "../assets/bg-pattern.png";
 import arrow from "../assets/arrow-hero.svg";
 import mouse from "../assets/mouse.svg";
 
-const optimizedPattern = await getImage({ src: pattern, quality: 20, format: "webp", alt: "Pattern" });
+const optimizedPattern = await getImage({
+	src: pattern,
+	quality: 20,
+	format: "webp",
+	alt: "Pattern",
+});
 ---
 
 <Section class="hero">
@@ -17,14 +22,14 @@ const optimizedPattern = await getImage({ src: pattern, quality: 20, format: "we
 			<div class="flex flex-col desktop:basis-1/2">
 				<h1 class="hero-heading">
 					Jamstack <span
-					class="hero-pattern"
-					style={`background-image: url(${optimizedPattern.src})`}>101</span
-				>
+						class="hero-pattern"
+						style={`background-image: url(${optimizedPattern.src})`}>101</span
+					>
 				</h1>
 				<p class="hero-content">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu augue massa,
-					tincidunt proin nunc viverra tristique tempor, ipsum. At lectus vel
-					pretium tempor ut dui vivamus sit.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu augue
+					massa, tincidunt proin nunc viverra tristique tempor, ipsum. At lectus
+					vel pretium tempor ut dui vivamus sit.
 				</p>
 			</div>
 

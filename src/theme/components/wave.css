@@ -1,0 +1,10 @@
+.wave {
+	@apply relative z-0;
+}
+
+.wave-pattern {
+	@apply absolute top-0 z-0;
+	@apply mx-auto w-full;
+
+	@apply desktop:mt-[-3vw];
+}
