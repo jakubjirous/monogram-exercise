@@ -6,7 +6,7 @@
 	@apply flex justify-center items-center;
 
 	/* background image	*/
-	@apply bg-[url("../../assets/wave.svg")] bg-no-repeat bg-center bg-[length:100%_auto];
+	@apply bg-[url("../../assets/bg-wave.svg")] bg-no-repeat bg-center bg-[length:100%_auto];
 
 	/* section overlap */
 	@apply translate-y-[-50%] mb-[-60%];

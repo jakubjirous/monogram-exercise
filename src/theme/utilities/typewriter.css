@@ -1,0 +1,26 @@
+.typewriter {
+	overflow: hidden;
+	border-right: 0.15em solid orange;
+	white-space: nowrap;
+	letter-spacing: 0.15em;
+	animation: typewriter 4s steps(40) infinite, typewriter-blink 1s infinite;
+}
+
+@keyframes typewriter {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes typewriter-blink {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: orange;
+	}
+}

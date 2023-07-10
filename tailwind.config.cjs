@@ -68,7 +68,8 @@ module.exports = {
 				18: ["1.125rem", { lineHeight: "195.5%" }],
 
 				// code
-				8: ["0.502rem", { lineHeight: "2.195" }],
+				"clamp-code": "clamp(0.125rem, 0.0102rem + 0.6122vw, 0.5rem)",
+				8: ["0.502rem", { lineHeight: "2" }],
 
 				// score
 				"clamp-score": "clamp(1.96875rem, 0.7273rem + 4.0127vw, 3.9375rem)",

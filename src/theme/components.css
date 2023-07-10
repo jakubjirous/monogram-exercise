@@ -1,8 +1,5 @@
-/* generic */
-@import "components/typography.css";
-@import "components/shadow.css";
-
 /* sections */
+@import "components/javascript.css";
 @import "components/logo.css";
 @import "components/api.css";
 @import "components/globe.css";

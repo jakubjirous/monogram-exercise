@@ -1,6 +1,9 @@
 .logo {
 	/* defaults */
 	@apply bg-dark-grey;
+
+	/* sections overlap */
+	@apply tablet:pt-52 desktop:pt-32;
 }
 
 .logo-grid {

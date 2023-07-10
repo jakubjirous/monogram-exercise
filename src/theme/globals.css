@@ -5,5 +5,6 @@
 @import "components.css";
 
 @import "tailwindcss/utilities.css";
+@import "utilities.css";
 
 @import "tailwindcss/variants.css";

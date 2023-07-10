@@ -6,7 +6,12 @@ import Container from "@components/container.astro";
 import Score from "@components/score.astro";
 import ArtBox from "@components/art-box.astro";
 
-import sphere from "../assets/sphere.svg";
+import computer from "../assets/bg-computer.png";
+
+import arrow from "../assets/arrow-hero.svg";
+import arrow2 from "../assets/arrow-js.svg";
+
+import { code } from "../utils/code";
 
 import logo1 from "../assets/logo1.svg";
 import logo2 from "../assets/logo2.svg";
@@ -16,6 +21,8 @@ import logo5 from "../assets/logo5.svg";
 import logo6 from "../assets/logo6.svg";
 import logo7 from "../assets/logo7.svg";
 import logo8 from "../assets/logo8.svg";
+
+import sphere from "../assets/sphere.svg";
 ---
 
 <Layout>
@@ -31,46 +38,27 @@ import logo8 from "../assets/logo8.svg";
 			</p>
 		</Container>
 	</Section>
-	<Section class="bg-dark-grey">
+
+	<Section class="javascript">
 		<Container>
-			<h2 class="typo-h1 text-white">javascript</h2>
-			<p class="typo-small text-white">
+			<h2 class="javascript-heading">javascript</h2>
+			<p class="javascript-content">
 				Statically generated pages are brought to life with client-side
 				JavaScript libraries and frameworks, such as Algolia and Next.js.
 			</p>
 
-			<p class="typo-code code-shadow">
-				{
-					`
-				import Document, { Html, Head, Main, NextScript } from 'next/document'
+			<div class="computer-bg">
+				<div class="computer-screen">
+					<img src={computer.src} alt="Retro computer" />
+					<div class="computer-terminal">
+						<div class="computer-code">
+							<pre><code>{code}</code></pre>
+						</div>
+					</div>
+				</div>
+			</div>
 
-				class MyDocument extends Document {
-				\trender() {
-				\t\treturn (
-				\t\t\t<Html lang="en">
-				\t\t\t\t<Head>
-				\t\t\t\t\t{/*Fonts*/}
-				\t\t\t\t\t<link rel="preconnect" href="https://rsms.me" crossOrigin="anonymous" />
-				\t\t\t\t\t<link rel="preconnect" href="https://kit.fontawesome.com" crossOrigin="anonymous" />
-				\t\t\t\t\t<link rel="preload" href="https://rsms.me/inter/inter.css" as="style" />
-				\t\t\t\t\t<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-				\t\t\t\t\t<noscript>
-				\t\t\t\t\t\t<link rel="stylesheet" type="text/css" href="https://rsms.me/inter/inter.css" />
-				\t\t\t\t\t</noscript>
-				\t\t\t\t</Head>
-				\t\t\t\t<body>
-				\t\t\t\t\t<Main />
-				\t\t\t\t\t<NextScript />
-				\t\t\t\t</body>
-				\t\t\t</Html>
-				\t\t)
-				\t}
-				}
-
-				export default MyDocument
-				`
-				}
-			</p>
+			<img src={arrow2.src} alt="Arrow" class="computer-arrow" />
 		</Container>
 	</Section>
 
@@ -78,11 +66,11 @@ import logo8 from "../assets/logo8.svg";
 		<Container>
 			<div class="logo-grid">
 				<div class="logo1">
-					<img src={logo1} alt="Next.js logo" width="307" height="360" />
+					<img src={logo1.src} alt="Next.js logo" width="307" height="360" />
 				</div>
 				<div class="logo2">
 					<img
-						src={logo2}
+						src={logo2.src}
 						alt="React logo"
 						class="desktop:translate-y-[62px]"
 						width="383"
@@ -91,7 +79,7 @@ import logo8 from "../assets/logo8.svg";
 				</div>
 				<div class="logo3">
 					<img
-						src={logo3}
+						src={logo3.src}
 						alt="Next.js logo"
 						class="desktop:translate-y-[-113px]"
 						width="307"
@@ -100,7 +88,7 @@ import logo8 from "../assets/logo8.svg";
 				</div>
 				<div class="logo4">
 					<img
-						src={logo4}
+						src={logo4.src}
 						alt="React logo"
 						class="desktop:translate-y-[14px]"
 						width="383"
@@ -109,28 +97,28 @@ import logo8 from "../assets/logo8.svg";
 				</div>
 				<div class="logo5">
 					<img
-						src={logo5}
+						src={logo5.src}
 						alt="Svelte logo"
 						class="desktop:translate-y-[-32px]"
 					/>
 				</div>
 				<div class="logo6">
 					<img
-						src={logo6}
+						src={logo6.src}
 						alt="Vue.js logo"
 						class="desktop:translate-y-[-20px]"
 					/>
 				</div>
 				<div class="logo7">
 					<img
-						src={logo7}
+						src={logo7.src}
 						alt="React logo"
 						class="desktop:translate-y-[-100px]"
 					/>
 				</div>
 				<div class="logo8">
 					<img
-						src={logo8}
+						src={logo8.src}
 						alt="Svelte logo"
 						class="desktop:translate-y-[10px]"
 					/>
@@ -151,7 +139,7 @@ import logo8 from "../assets/logo8.svg";
 	</Section>
 
 	<Section class="globe">
-		<img src={sphere} alt="Sphere" class="sphere" />
+		<img src={sphere.src} alt="Sphere" class="sphere" />
 	</Section>
 
 	<Section class="markup">

@@ -83,6 +83,9 @@
 
 	/* font size */
 	@apply text-8;
+
+	/* fluid typography */
+	@apply text-clamp-code;
 }
 
 .typo-score {
