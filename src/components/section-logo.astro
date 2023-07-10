@@ -1,0 +1,78 @@
+---
+import Container from "./container.astro";
+import Section from "./section.astro";
+
+import logo1 from "../assets/logo1.svg";
+import logo2 from "../assets/logo2.svg";
+import logo3 from "../assets/logo3.svg";
+import logo4 from "../assets/logo4.svg";
+import logo5 from "../assets/logo5.svg";
+import logo6 from "../assets/logo6.svg";
+import logo7 from "../assets/logo7.svg";
+import logo8 from "../assets/logo8.svg";
+---
+
+<Section class="logo">
+  <Container>
+    <div class="logo-grid">
+      <div class="logo1">
+        <img src={logo1.src} alt="Next.js logo" width="307" height="360" />
+      </div>
+      <div class="logo2">
+        <img
+          src={logo2.src}
+          alt="React logo"
+          class="desktop:translate-y-[62px]"
+          width="383"
+          height="341"
+        />
+      </div>
+      <div class="logo3">
+        <img
+          src={logo3.src}
+          alt="Next.js logo"
+          class="desktop:translate-y-[-113px]"
+          width="307"
+          height="360"
+        />
+      </div>
+      <div class="logo4">
+        <img
+          src={logo4.src}
+          alt="React logo"
+          class="desktop:translate-y-[14px]"
+          width="383"
+          height="341"
+        />
+      </div>
+      <div class="logo5">
+        <img
+          src={logo5.src}
+          alt="Svelte logo"
+          class="desktop:translate-y-[-32px]"
+        />
+      </div>
+      <div class="logo6">
+        <img
+          src={logo6.src}
+          alt="Vue.js logo"
+          class="desktop:translate-y-[-20px]"
+        />
+      </div>
+      <div class="logo7">
+        <img
+          src={logo7.src}
+          alt="React logo"
+          class="desktop:translate-y-[-100px]"
+        />
+      </div>
+      <div class="logo8">
+        <img
+          src={logo8.src}
+          alt="Svelte logo"
+          class="desktop:translate-y-[10px]"
+        />
+      </div>
+    </div>
+  </Container>
+</Section>

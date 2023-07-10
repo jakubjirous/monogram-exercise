@@ -1,0 +1,61 @@
+---
+import Container from "./container.astro";
+import Section from "./section.astro";
+
+import arrow from "../assets/arrow-js.svg";
+import computer from "../assets/bg-computer.png";
+
+// TODO: png image to webp (Jakub Jirous 2023-07-10 08:17:30)
+---
+
+<Section class="javascript">
+  <Container>
+    <h2 class="typo-h1 text-center text-white">JavaScript</h2>
+    <p class="javascript-content">
+      Statically generated pages are brought to life with client-side
+      JavaScript libraries and frameworks, such as Algolia and Next.js.
+    </p>
+
+    <div class="computer-bg">
+      <div class="computer-screen">
+        <img src={computer.src} alt="Retro computer" />
+        <div class="computer-terminal">
+          <div class="computer-code">
+            <code class="typed">
+              <pre style="--i: 0">{`import Document, { Html, Head, Main, NextScript } from 'next/document'`}</pre>
+              <pre style="--i: 1">{`
+								`}</pre>
+              <pre style="--i: 2">{`class MyDocument extends Document {`}</pre>
+              <pre style="--i: 3">{`  render() {`}</pre>
+              <pre style="--i: 4">{`    return (`}</pre>
+              <pre style="--i: 5">{`      <Html lang="en">`}</pre>
+              <pre style="--i: 6">{`        <Head>`}</pre>
+              <pre style="--i: 7">{`          {/*Fonts*/}`}</pre>
+              <pre style="--i: 8">{`          <link rel="preconnect" href="https://rsms.me" crossOrigin="anonymous" />`}</pre>
+              <pre style="--i: 9">{`          <link rel="preconnect" href="https://kit.fontawesome.com" crossOrigin="anonymous" />`}</pre>
+              <pre style="--i: 10">{`          <link rel="preload" href="https://rsms.me/inter/inter.css" as="style" />`}</pre>
+              <pre style="--i: 11">{`          <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />`}</pre>
+              <pre style="--i: 12">{`          <noscript>`}</pre>
+              <pre style="--i: 13">{`            <link rel="stylesheet" type="text/css" href="https://rsms.me/inter/inter.css" />`}</pre>
+              <pre style="--i: 14">{`          </noscript>`}</pre>
+              <pre style="--i: 15">{`        </Head>`}</pre>
+              <pre style="--i: 16">{`        <body>`}</pre>
+              <pre style="--i: 17">{`          <Main />`}</pre>
+              <pre style="--i: 18">{`          <NextScript />`}</pre>
+              <pre style="--i: 19">{`        </body>`}</pre>
+              <pre style="--i: 20">{`      </Html>`}</pre>
+              <pre style="--i: 21">{`    )`}</pre>
+              <pre style="--i: 22">{`  }`}</pre>
+              <pre style="--i: 23">{`}`}</pre>
+              <pre style="--i: 24">{`
+								`}</pre>
+              <pre style="--i: 25">{`export default MyDocument`}</pre>
+            </code>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img src={arrow.src} alt="Arrow" class="computer-arrow" />
+  </Container>
+</Section>

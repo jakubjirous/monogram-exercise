@@ -1,6 +1,6 @@
 .typo-h1 {
 	/* defaults */
-	@apply font-inter font-black;
+	@apply font-inter font-black lowercase;
 
 	/* font size */
 	@apply text-56 tablet:text-82 desktop:text-133;
@@ -17,7 +17,7 @@
 
 .typo-h2 {
 	/* defaults */
-	@apply font-inter text-rice-flower font-black;
+	@apply font-inter text-rice-flower font-black lowercase;
 
 	/* font size */
 	@apply text-32 tablet:text-48 desktop:text-76;
