@@ -1,6 +1,7 @@
 ---
 import Container from "./container.astro";
 import Section from "./section.astro";
+import { Image } from 'astro:assets'
 
 import arrow from "../assets/arrow-js.svg";
 import computer from "../assets/bg-computer.png";
@@ -18,7 +19,7 @@ import computer from "../assets/bg-computer.png";
 
     <div class="computer-bg">
       <div class="computer-screen">
-        <img src={computer.src} alt="Retro computer" />
+        <Image src={computer} width={804} height={808} format="webp" quality="50" alt="Retro computer" />
         <div class="computer-terminal">
           <div class="computer-code">
             <code class="typed">
