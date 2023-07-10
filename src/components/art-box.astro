@@ -2,6 +2,9 @@
 import markupLeftArt from "../assets/markup-left.svg";
 import markupRightArt from "../assets/markup-right.svg";
 
+import heroLeftArt from "../assets/hero-left.svg";
+import heroRightArt from "../assets/hero-right.svg";
+
 export interface Props {
 	class?: string;
 	isHero?: boolean;
@@ -13,18 +16,18 @@ const { class: className, isHero } = Astro.props;
 <div class:list={["art-box", className]}>
 	<div class="art-box-group">
 		<img
-			src={markupLeftArt.src}
-			alt="First markup art"
-			class="art-box-image-1st mt-40"
+			src={isHero ? heroLeftArt.src : markupLeftArt.src}
+			alt="First art"
+			class="art-box-image-1st"
 		/>
 		<img
-			src={markupRightArt.src}
-			alt="Second markup art"
+			src={isHero ? heroRightArt.src : markupRightArt.src}
+			alt="Second art"
 			class="art-box-image-2nd"
 		/>
 	</div>
 	<div class="art-box-blurry-group">
-		<div class="art-box-blurry-1st"></div>
-		<div class="art-box-blurry-2nd"></div>
+		<div class={`art-box-blurry-1st ${isHero ? "bg-white/40" : ""}`}></div>
+		<div class={`art-box-blurry-2nd ${isHero ? "bg-white/40" : ""}`}></div>
 	</div>
 </div>

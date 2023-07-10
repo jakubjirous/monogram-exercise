@@ -1,0 +1,70 @@
+.hero {
+	/* defaults */
+	@apply relative;
+	@apply overflow-hidden tablet:overflow-visible;
+
+	/* margin */
+	@apply tablet:mx-8 desktop:mx-16;
+
+	/* padding */
+	@apply pt-10;
+	@apply tablet:pt-20;
+	@apply desktop:pt-40;
+}
+
+.hero-pattern {
+	/* defaults */
+	@apply text-transparent;
+
+	/* background */
+	@apply bg-clip-text bg-cover;
+	-webkit-background-clip: text;
+}
+
+.hero-heading {
+	/* defaults */
+	@apply typo-h1 tablet:text-left;
+	@apply tablet:whitespace-nowrap;
+}
+
+.hero-content {
+	/* defaults */
+	@apply typo-small;
+
+	/* margin */
+	@apply mt-7 tablet:mt-9 desktop:mt-11;
+
+	/* padding */
+	@apply mx-auto;
+	@apply tablet:ml-10 tablet:mr-0;
+	@apply desktop:ml-14;
+
+	/* width */
+	@apply max-w-[34.3125rem] desktop:max-w-[25.3125rem] min-[1400px]:max-w-[34.3125rem];
+}
+
+.hero-arrow {
+	/* defaults */
+	@apply absolute bottom-0 right-0 left-0 mx-auto;
+
+	/* scale */
+	@apply scale-50 tablet:scale-75 desktop:scale-100;
+
+	/* position */
+	@apply translate-x-[-30vw] translate-y-[1rem];
+	@apply desktop:translate-x-[-22rem] desktop:translate-y-[7.62rem];
+
+	@apply -z-10;
+}
+
+.hero-mouse {
+	/* defaults */
+	@apply absolute bottom-0 right-0 left-0 mx-auto;
+
+	/* scale */
+	@apply scale-50 tablet:scale-75 desktop:scale-100;
+
+	@apply translate-x-[-32vw] translate-y-[-23.8rem];
+	@apply tablet:translate-x-[-31.4vw] tablet:translate-y-[-28.4rem];
+	@apply desktop:translate-x-[-23rem] desktop:translate-y-[-26.2rem];
+}

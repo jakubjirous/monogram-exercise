@@ -3,7 +3,7 @@
 	@apply relative overflow-hidden;
 
 	/* height */
-	@apply min-h-[88rem] tablet:min-h-[104rem] desktop:min-h-[80rem];
+	@apply tablet:min-h-[78rem] desktop:min-h-[80rem];
 }
 
 .markup-content {
@@ -19,13 +19,16 @@
 
 .wall {
 	/* position */
-	@apply absolute bottom-0 overflow-x-hidden;
+	@apply absolute bottom-0;
 
 	/* height */
 	@apply min-h-[42rem];
 
 	/* flex */
 	@apply flex flex-col items-center justify-end w-full;
+
+	/* scale */
+	@apply origin-bottom scale-50 tablet:scale-75 desktop:scale-100;
 }
 
 .wall-row {

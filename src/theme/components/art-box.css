@@ -8,7 +8,10 @@
 	@apply tablet:justify-end;
 
 	/* margin */
-	@apply mt-7 tablet:mt-14 desktop:mt-7;
+	@apply -mt-32 tablet:-mt-10 desktop:mt-7;
+
+	/* scale */
+	@apply scale-50 tablet:scale-75 desktop:scale-100;
 }
 
 .art-box-group {
@@ -39,14 +42,17 @@
 	@apply w-[17.5rem];
 	@apply h-[39.3215rem];
 
-	/* visibility */
-	@apply hidden tablet:inline-flex;
+	/* margin */
+	@apply mt-7 tablet:mt-40;
 }
 
 .art-box-image-2nd {
 	/* defaults */
 	@apply w-[17.375rem];
 	@apply h-[41.875rem];
+
+	/* visibility */
+	@apply hidden tablet:inline-flex;
 }
 
 .art-box-blurry-1st {
@@ -62,9 +68,6 @@
 
 	/* blur */
 	@apply backdrop-blur-60;
-
-	/* visibility */
-	@apply hidden tablet:inline-flex;
 }
 
 .art-box-blurry-2nd {
@@ -75,5 +78,5 @@
 	@apply h-[41.375rem];
 
 	/* visibility */
-	@apply inline-flex;
+	@apply hidden tablet:inline-flex;
 }

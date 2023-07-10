@@ -1,20 +1,37 @@
 ---
+import { getImage } from "@astrojs/image";
+import ArtBox from "./art-box.astro";
 import Container from "./container.astro";
 import Section from "./section.astro";
 
+import pattern from "../assets/bg-pattern.png";
 import arrow from "../assets/arrow-hero.svg";
+import mouse from "../assets/mouse.svg";
+
+const optimizedPattern = await getImage({ src: pattern, quality: 20, format: "webp", alt: "Pattern" });
 ---
 
 <Section class="hero">
-  <Container>
-    <h1 class="typo-h1 tablet:text-left">
-      Jamstack <span class="text-red-500">101</span>
-    </h1>
+	<Container>
+		<div class="flex flex-col desktop:flex-row desktop:gap-8">
+			<div class="flex flex-col desktop:basis-1/2">
+				<h1 class="hero-heading">
+					Jamstack <span
+					class="hero-pattern"
+					style={`background-image: url(${optimizedPattern.src})`}>101</span
+				>
+				</h1>
+				<p class="hero-content">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu augue massa,
+					tincidunt proin nunc viverra tristique tempor, ipsum. At lectus vel
+					pretium tempor ut dui vivamus sit.
+				</p>
+			</div>
 
-    <p class="typo-small">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu augue
-      massa, tincidunt proin nunc viverra tristique tempor, ipsum. At lectus
-      vel pretium tempor ut dui vivamus sit.
-    </p>
-  </Container>
+			<ArtBox isHero={true} class="desktop:basis-1/2" />
+		</div>
+
+		<img src={arrow.src} alt="Arrow" class="hero-arrow" />
+		<img src={mouse.src} alt="Mouse" class="hero-mouse" />
+	</Container>
 </Section>

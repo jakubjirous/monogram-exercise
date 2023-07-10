@@ -1,19 +1,9 @@
-@keyframes typing {
-	from {
-		width: 0;
-	}
-	to {
-		width: 100%;
-		visibility: visible;
-	}
-}
-
 .typed {
 	visibility: hidden;
 }
 
 .typed pre {
-	--time: 1s;
+	--time: 1.2s;
 	--delay: calc(var(--i) * var(--time));
 
 	overflow: hidden;
@@ -25,4 +15,14 @@
 	animation-delay: var(--delay);
 	visibility: hidden;
 	animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+		visibility: visible;
+	}
 }

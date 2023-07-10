@@ -7,6 +7,7 @@
 	@apply bg-cover tablet:bg-contain;
 
 	/* margin */
+	@apply -mt-20 tablet:-mt-32 desktop:mt-0;
 	@apply tablet:mx-8 desktop:mx-16;
 
 	/* padding */
@@ -84,14 +85,17 @@
 
 .computer-arrow {
 	/* defaults */
-	@apply hidden tablet:inline-flex;
 	@apply absolute bottom-0 right-0 left-0 mx-auto;
+	@apply hidden tablet:inline-flex;
 
-	/* height */
-	@apply tablet:h-1/2 desktop:h-auto;
+	/* scale */
+	@apply scale-50 tablet:scale-75 desktop:scale-100;
 
 	/* position */
-	@apply tablet:translate-x-[30vw] tablet:translate-y-[-5rem];
+	@apply translate-x-[30%] translate-y-[-2%];
+	@apply min-[400px]:translate-x-[34vw] min-[400px]:translate-y-[14%];
+	@apply min-[600px]:translate-x-[35.5vw] min-[600px]:translate-y-[14%];
+	@apply tablet:translate-x-[30vw] tablet:translate-y-[-2rem];
 	@apply desktop:translate-x-[29vw] desktop:translate-y-[-7rem];
-	@apply min-[1750px]:translate-x-[31.6rem];
+	@apply min-[1750px]:translate-x-[30.6rem];
 }
