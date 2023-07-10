@@ -7,7 +7,7 @@
 	@apply bg-cover tablet:bg-contain;
 
 	/* margin */
-	@apply -mt-20 tablet:-mt-32 desktop:mt-0;
+	@apply -mt-44 tablet:-mt-60 desktop:-mt-44;
 	@apply tablet:mx-8 desktop:mx-16;
 
 	/* padding */

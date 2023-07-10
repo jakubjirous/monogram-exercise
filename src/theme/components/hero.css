@@ -1,7 +1,6 @@
 .hero {
 	/* defaults */
-	@apply relative;
-	@apply overflow-hidden tablet:overflow-visible;
+	@apply relative overflow-hidden;
 
 	/* margin */
 	@apply tablet:mx-8 desktop:mx-16;
@@ -9,7 +8,7 @@
 	/* padding */
 	@apply pt-10;
 	@apply tablet:pt-20;
-	@apply desktop:pt-40;
+	@apply desktop:pt-40 pb-40;
 }
 
 .hero-pattern {
@@ -51,8 +50,8 @@
 	@apply scale-50 tablet:scale-75 desktop:scale-100;
 
 	/* position */
-	@apply translate-x-[-30vw] translate-y-[1rem];
-	@apply desktop:translate-x-[-22rem] desktop:translate-y-[7.62rem];
+	@apply translate-x-[-30vw] translate-y-[-5rem];
+	@apply desktop:translate-x-[-22rem] desktop:translate-y-[-2rem];
 
 	@apply -z-10;
 }
@@ -64,7 +63,7 @@
 	/* scale */
 	@apply scale-50 tablet:scale-75 desktop:scale-100;
 
-	@apply translate-x-[-32vw] translate-y-[-23.8rem];
-	@apply tablet:translate-x-[-31.4vw] tablet:translate-y-[-28.4rem];
-	@apply desktop:translate-x-[-23rem] desktop:translate-y-[-26.2rem];
+	@apply translate-x-[-32vw] translate-y-[-29.8rem];
+	@apply tablet:translate-x-[-31.4vw] tablet:translate-y-[-34.4rem];
+	@apply desktop:translate-x-[-23rem] desktop:translate-y-[-36rem];
 }
