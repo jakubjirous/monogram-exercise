@@ -6,7 +6,7 @@
 	@apply tablet:min-h-[78rem] desktop:min-h-[80rem];
 
 	/* margin */
-	@apply mt-[50vw] desktop:mt-[40rem];
+	/*@apply mt-[50vw] desktop:mt-[40rem];*/
 }
 
 .markup-heading {

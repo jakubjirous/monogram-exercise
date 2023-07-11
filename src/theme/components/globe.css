@@ -1,12 +1,25 @@
 .globe {
 	/* defaults */
-	@apply relative z-50 h-1;
+	@apply relative z-auto;
 
 	/* flex	*/
 	@apply flex justify-center items-center;
+
+	/* background image	*/
+	@apply bg-[url("../../assets/bg-wave.svg")] bg-no-repeat bg-center bg-[length:100%_auto];
+
+	/* section overlap */
+	@apply mt-[-80%];
+	@apply min-[200px]:mt-[-75%];
+	@apply min-[300px]:mt-[-68%];
+	@apply tablet:mt-[-58%];
+	@apply desktop:mt-[-45rem];
 }
 
 .globe-sphere {
+	/* defaults */
+	@apply relative z-50;
+
 	/* centering */
 	@apply ml-[-18%] mb-[5.375rem];
 	@apply tablet:ml-[-16%] mb-[5.375rem];
