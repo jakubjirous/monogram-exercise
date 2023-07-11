@@ -17,8 +17,4 @@ export default defineConfig({
 	build: {
 		split: true
 	},
-	// output: 'server',
-	// adapter: vercel({
-	// 	analytics: true
-	// }),
 });
