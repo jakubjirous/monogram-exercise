@@ -1,0 +1,64 @@
+.brick-hide-general {
+	/* effect */
+	@apply duration-[500ms];
+	@apply opacity-0;
+	@apply blur-60;
+}
+
+.brick-show-general {
+	/* effect */
+	@apply opacity-100;
+	@apply blur-none;
+}
+
+.brick-hide {
+	@apply brick-hide-general;
+	@apply -translate-x-[8rem] -translate-y-[6rem];
+}
+
+.brick-show {
+	@apply brick-show-general;
+	@apply translate-x-0 translate-y-0;
+}
+
+.brick-1st-hide {
+	@apply brick-hide-general;
+	@apply translate-y-[-55.7rem] translate-x-0 rotate-[90deg];
+}
+.brick-1st-show {
+	@apply brick-show-general;
+	@apply translate-y-[-35.7rem] translate-x-[-22rem] rotate-[-16.914deg];
+}
+
+.brick-2nd-hide {
+	@apply brick-hide-general;
+	@apply translate-y-[-42.53rem] translate-x-[-42rem] rotate-[-90deg];
+}
+.brick-2nd-show {
+	@apply brick-show-general;
+	@apply translate-y-[-22.53rem] translate-x-[-32rem] rotate-[14.162deg];
+}
+
+.brick-3rd-hide {
+	@apply brick-hide-general;
+	@apply translate-y-[-43rem] translate-x-[-31rem] rotate-[-90deg];
+}
+.brick-3rd-show {
+	@apply brick-show-general;
+	@apply translate-y-[-23rem] translate-x-[-11rem] rotate-[-58.552deg];
+}
+
+@media (prefers-reduced-motion) {
+	.brick-hide {
+		@apply transition-none;
+	}
+	.brick-1st-hide {
+		@apply brick-hide;
+	}
+	.brick-2nd-hide {
+		@apply brick-hide;
+	}
+	.brick-3rd-hide {
+		@apply brick-hide;
+	}
+}

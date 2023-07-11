@@ -1,6 +1,6 @@
 .globe {
 	/* defaults */
-	@apply relative z-50 h-0;
+	@apply relative z-50 h-1;
 
 	/* flex	*/
 	@apply flex justify-center items-center;

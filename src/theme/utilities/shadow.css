@@ -3,7 +3,6 @@
 }
 
 .score-shadow {
-	text-shadow: 0px 0px 61px theme("colors.harlequin"),
-		0px 0px 42px theme("colors.sunflower"),
-		0px 0px 12px theme("colors.harlequin");
+	text-shadow: 0 0 61px theme("colors.harlequin"),
+		0 0 42px theme("colors.sunflower"), 0 0 12px theme("colors.harlequin");
 }

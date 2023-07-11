@@ -1,8 +1,8 @@
-.typed {
+.typed-hide {
 	visibility: hidden;
 }
 
-.typed pre {
+.typed-show pre {
 	--time: 1.2s;
 	--delay: calc(var(--i) * var(--time));
 

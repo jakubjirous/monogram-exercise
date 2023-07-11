@@ -9,6 +9,11 @@
 	@apply mt-[50vw] desktop:mt-[40rem];
 }
 
+.markup-heading {
+	@apply typo-h1;
+	@apply tablet:text-left;
+}
+
 .markup-content {
 	/* default */
 	@apply typo-body2;

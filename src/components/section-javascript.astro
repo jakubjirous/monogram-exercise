@@ -5,14 +5,12 @@ import { Image } from "astro:assets";
 
 import arrow from "../assets/arrow-js.svg";
 import computer from "../assets/bg-computer.png";
-
-// TODO: png image to webp (Jakub Jirous 2023-07-10 08:17:30)
 ---
 
 <Section class="javascript">
 	<Container>
-		<h2 class="typo-h1 text-center text-white">JavaScript</h2>
-		<p class="javascript-content">
+		<h2 class="javascript-heading scroll-hide">JavaScript</h2>
+		<p class="javascript-content scroll-hide delay-[200ms]">
 			Statically generated pages are brought to life with client-side JavaScript
 			libraries and frameworks, such as Algolia and Next.js.
 		</p>
@@ -29,7 +27,7 @@ import computer from "../assets/bg-computer.png";
 				/>
 				<div class="computer-terminal">
 					<div class="computer-code">
-						<code class="typed">
+						<code class="typed-hide">
 							<pre
 								style="--i: 0">{`import Document, { Html, Head, Main, NextScript } from 'next/document'`}</pre>
 							<pre style="--i: 1">{`

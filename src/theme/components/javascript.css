@@ -25,6 +25,11 @@
 	@apply tablet:translate-y-32 desktop:translate-y-44;
 }
 
+.javascript-heading {
+	@apply typo-h1;
+	@apply text-center text-white;
+}
+
 .javascript-content {
 	/* defaults */
 	@apply typo-small;

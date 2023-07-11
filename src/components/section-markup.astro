@@ -9,8 +9,8 @@ import Section from "./section.astro";
 	<Container>
 		<div class="flex flex-col desktop:flex-row desktop:gap-8">
 			<div class="flex flex-col desktop:basis-1/2">
-				<h2 class="typo-h1 tablet:text-left">Markup</h2>
-				<p class="markup-content">
+				<h2 class="markup-heading scroll-hide">Markup</h2>
+				<p class="markup-content scroll-hide delay-200">
 					When ready for deployment, a static-site generator such as Astro or
 					Next.js is used to compile the website. The end result is a collection
 					of pre-rendered HTML pages that can be delivered lightning-fast over a
@@ -25,42 +25,90 @@ import Section from "./section.astro";
 	<div class="wall">
 		<Brick
 			svgClass="fill-endeavour"
-			wrapperClass="absolute bottom-0 translate-y-[-35.7rem] translate-x-[-22rem] rotate-[-16.914deg]"
+			wrapperClass="absolute bottom-0 brick-1st-hide delay-[1300ms]"
 		/>
 		<Brick
 			svgClass="fill-thunderbird"
-			wrapperClass="absolute bottom-0 translate-y-[-22.53rem] translate-x-[-32rem] rotate-[14.162deg] "
+			wrapperClass="absolute bottom-0 brick-2nd-hide delay-[1250ms]"
 		/>
 		<Brick
 			svgClass="fill-koromiko"
-			wrapperClass="absolute bottom-0 translate-y-[-23rem] translate-x-[-11rem] rotate-[-58.552deg]"
+			wrapperClass="absolute bottom-0 brick-3rd-hide delay-[1200ms]"
 		/>
 
 		<div class="wall-row">
-			<Brick svgClass="fill-transparent" />
-			<Brick svgClass="fill-endeavour" />
-			<Brick svgClass="fill-koromiko" />
+			<Brick
+				svgClass="fill-transparent"
+				wrapperClass="brick-hide delay-[850ms]"
+			/>
+			<Brick
+				svgClass="fill-endeavour"
+				wrapperClass="brick-hide delay-[800ms]"
+			/>
+			<Brick svgClass="fill-koromiko" wrapperClass="brick-hide delay-[750ms]" />
 		</div>
 		<div class="wall-row">
-			<Brick svgClass="fill-thunderbird opacity-60" />
-			<Brick svgClass="fill-koromiko opacity-60" />
-			<Brick svgClass="fill-black opacity-60" />
-			<Brick svgClass="fill-thunderbird opacity-60" />
+			<Brick
+				svgClass="fill-thunderbird opacity-60"
+				wrapperClass="brick-hide delay-[700ms]"
+			/>
+			<Brick
+				svgClass="fill-koromiko opacity-60"
+				wrapperClass="brick-hide delay-[650ms]"
+			/>
+			<Brick
+				svgClass="fill-black opacity-60"
+				wrapperClass="brick-hide delay-[600ms]"
+			/>
+			<Brick
+				svgClass="fill-thunderbird opacity-60"
+				wrapperClass="brick-hide delay-[550ms]"
+			/>
 		</div>
 		<div class="wall-row">
-			<Brick svgClass="fill-black opacity-30" />
-			<Brick svgClass="fill-endeavour opacity-30" />
-			<Brick svgClass="fill-gull-gray opacity-30" />
-			<Brick svgClass="fill-endeavour opacity-30" />
-			<Brick svgClass="fill-koromiko opacity-30" />
+			<Brick
+				svgClass="fill-black opacity-30"
+				wrapperClass="brick-hide delay-[500ms]"
+			/>
+			<Brick
+				svgClass="fill-endeavour opacity-30"
+				wrapperClass="brick-hide delay-[450ms]"
+			/>
+			<Brick
+				svgClass="fill-gull-gray opacity-30"
+				wrapperClass="brick-hide delay-[400ms]"
+			/>
+			<Brick
+				svgClass="fill-endeavour opacity-30"
+				wrapperClass="brick-hide delay-[350ms]"
+			/>
+			<Brick
+				svgClass="fill-koromiko opacity-30"
+				wrapperClass="brick-hide delay-[300ms]"
+			/>
 		</div>
 		<div class="wall-row">
-			<Brick svgClass="fill-thunderbird opacity-20" />
-			<Brick svgClass="fill-koromiko opacity-20" />
-			<Brick svgClass="fill-black opacity-20" />
-			<Brick svgClass="fill-endeavour opacity-20" />
-			<Brick svgClass="fill-koromiko opacity-20" />
-			<Brick svgClass="fill-thunderbird opacity-20" />
+			<Brick
+				svgClass="fill-thunderbird opacity-20"
+				wrapperClass="brick-hide delay-[250ms]"
+			/>
+			<Brick
+				svgClass="fill-koromiko opacity-20"
+				wrapperClass="brick-hide delay-[200ms]"
+			/>
+			<Brick
+				svgClass="fill-black opacity-20"
+				wrapperClass="brick-hide delay-[150ms]"
+			/>
+			<Brick
+				svgClass="fill-endeavour opacity-20"
+				wrapperClass="brick-hide delay-[100ms]"
+			/>
+			<Brick
+				svgClass="fill-koromiko opacity-20"
+				wrapperClass="brick-hide delay-[50ms]"
+			/>
+			<Brick svgClass="fill-thunderbird opacity-20" wrapperClass="brick-hide" />
 		</div>
 	</div>
 </Section>

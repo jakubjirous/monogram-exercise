@@ -7,14 +7,31 @@ import Section from "./section.astro";
 <Section class="audit">
 	<Container>
 		<div class="audit-card">
-			<h3 class="audit-heading">Top Audit Scores</h3>
+			<h3 class="audit-heading scroll-hide">Top Audit Scores</h3>
 			<div class="audit-score-box">
-				<Score>100</Score>
-				<Score>100</Score>
-				<Score imgClass="opacity-30">100</Score>
-				<Score>100</Score>
+				<Score
+					wrapperClass="scroll-hide delay-[200ms]"
+					imgClass="animate-pulse"
+				>
+					100
+				</Score>
+				<Score
+					wrapperClass="scroll-hide delay-[400ms]"
+					imgClass="animate-pulse"
+				>
+					100
+				</Score>
+				<Score wrapperClass="scroll-hide delay-[600ms]" imgClass="opacity-30">
+					100
+				</Score>
+				<Score
+					wrapperClass="scroll-hide delay-[800ms]"
+					imgClass="animate-pulse"
+				>
+					100
+				</Score>
 			</div>
-			<div class="audit-content">
+			<div class="audit-content scroll-hide delay-[1s]">
 				<p class="typo-body1">
 					Search engines, business stakeholders, and end-users gauge
 					a&nbsp;website’s value using metric tools like Google Lighthouse,

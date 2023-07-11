@@ -4,3 +4,5 @@
 
 /* animations */
 @import "utilities/typed.css";
+@import "utilities/scroll.css";
+@import "utilities/brick.css";

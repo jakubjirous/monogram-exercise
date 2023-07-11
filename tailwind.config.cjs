@@ -103,6 +103,27 @@ module.exports = {
 				7: "7",
 				8: "8",
 			},
+			animation: {
+				marque: "marque 10s linear infinite",
+				float: "float 6s ease-in-out infinite",
+			},
+			keyframes: {
+				marque: {
+					"0%": { left: "0%" },
+					"100%": { left: "-100%" },
+				},
+				float: {
+					"0%": {
+						transform: "translateY(0)",
+					},
+					"50%": {
+						transform: "translateY(-1rem)",
+					},
+					"100%": {
+						transform: "translateY(0)",
+					},
+				},
+			},
 		},
 	},
 };

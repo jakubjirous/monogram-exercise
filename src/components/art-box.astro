@@ -18,16 +18,26 @@ const { class: className, isHero } = Astro.props;
 		<img
 			src={isHero ? heroLeftArt.src : markupLeftArt.src}
 			alt="First art"
-			class="art-box-image-1st"
+			class="art-box-image-1st scroll-right-hide"
 		/>
 		<img
 			src={isHero ? heroRightArt.src : markupRightArt.src}
 			alt="Second art"
-			class="art-box-image-2nd"
+			class="art-box-image-2nd scroll-right-hide delay-[400ms]"
 		/>
 	</div>
 	<div class="art-box-blurry-group">
-		<div class={`art-box-blurry-1st ${isHero ? "bg-white/40" : ""}`}></div>
-		<div class={`art-box-blurry-2nd ${isHero ? "bg-white/40" : ""}`}></div>
+		<div
+			class={`art-box-blurry-1st ${
+				isHero ? "bg-white/40" : ""
+			} scroll-right-hide delay-[200ms]`}
+		>
+		</div>
+		<div
+			class={`art-box-blurry-2nd ${
+				isHero ? "bg-white/40" : ""
+			} scroll-right-hide delay-[600ms]`}
+		>
+		</div>
 	</div>
 </div>
