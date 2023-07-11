@@ -5,7 +5,7 @@
 	/* sections overlap */
 	@apply pb-[60%];
 	@apply tablet:pb-[50%];
-	@apply desktop:pb-[34rem];
+	@apply desktop:pb-[40rem];
 }
 
 .api-heading {

@@ -17,6 +17,9 @@ dependencies:
   "@fontsource-variable/inter":
     specifier: ^5.0.5
     version: 5.0.5
+  "@splinetool/runtime":
+    specifier: ^0.9.383
+    version: 0.9.383
   astro:
     specifier: ^2.8.0
     version: 2.8.0(sharp@0.31.3)
@@ -1276,10 +1279,10 @@ packages:
       rollup: 3.26.2
     dev: false
 
-  /@splinetool/runtime@0.9.382:
+  /@splinetool/runtime@0.9.383:
     resolution:
       {
-        integrity: sha512-wamkLlpwcsB3WmJShLFBEcGQ6xlbKiubWCNsLXvsIMYcJt3VD7JgShLdHnKBhCCZFFh7/sdfBVAQJqN6aNzFgw==,
+        integrity: sha512-2NqNxxQPvWMTn9+uOXLAAFB0mIuzE0NBMaixQ16yAKxL+8YySUwOYLyM4iX0D3afUYfZovQSZiY2lSiQzL82SQ==,
       }
     dependencies:
       on-change: 4.0.2

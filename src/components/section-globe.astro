@@ -1,33 +1,28 @@
 ---
+import { getImage } from "@astrojs/image";
 import Section from "./section.astro";
 
-import supabase from "../assets/logo-supabase.svg";
-import prismic from "../assets/logo-prismic.svg";
-
-import sphere from "../assets/sphere.svg";
-import sphere2 from "../assets/shpere-v2.svg";
+import glow from "../assets/bg-glow.png";
+const optimizedGlow = await getImage({
+	src: glow,
+	format: "webp",
+	alt: "Background glow",
+});
 ---
 
 <Section class="globe">
-	<div class="globe-sphere">
-		<img src={sphere.src} width={1279} height={1315} alt="Sphere" />
-		<!--<img src={sphere2.src} width={1317} height={1314} alt="Sphere" />-->
+	<div
+		class="globe-spline"
+		style={`background-image: url(${optimizedGlow.src});`}
+	>
+		<canvas id="spline3d"></canvas>
 	</div>
 </Section>
 
-<div class="marquee flex flex-row gap-8">
-	<div class="marquee-group">
-		<span class="text-red-500">Supabase</span>
-		<span>Prismic</span>
-		<!--<img src={supabase.src} height={93} alt="Logo Supabase" />-->
-		<!--<img src={prismic.src} height={93} alt="Logo Prismic" />-->
-		<!--<img src={supabase.src} height={93} alt="Logo Supabase" />-->
-		<!--<img src={prismic.src} height={93} alt="Logo Prismic" />-->
-	</div>
-	<div class="marquee-group" aria-hidden="true">
-		<!--<img src={supabase.src} height={93} alt="Logo Supabase" />-->
-		<!--<img src={prismic.src} height={93} alt="Logo Prismic" />-->
-		<!--<img src={supabase.src} height={93} alt="Logo Supabase" />-->
-		<!--<img src={prismic.src} height={93} alt="Logo Prismic" />-->
-	</div>
-</div>
+<script>
+	import { Application } from "@splinetool/runtime";
+
+	const canvas = document.getElementById("spline3d");
+	const app = new Application(canvas);
+	app.load("https://prod.spline.design/Q8gJIB6FoodYWF3w/scene.splinecode");
+</script>
