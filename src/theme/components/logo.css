@@ -17,39 +17,62 @@
 .logo1 {
 	@apply tablet:col-start-3;
 	@apply desktop:col-start-4;
+
+	@apply animate-float;
 }
 
 .logo2 {
 	@apply tablet:row-start-2;
 	@apply desktop:row-start-2;
+
+	@apply animate-float;
+	animation-delay: 1s;
 }
 
 .logo3 {
 	@apply tablet:col-start-2 tablet:row-start-3;
 	@apply desktop:col-start-2 desktop:row-start-3;
+
+	@apply animate-float;
+	animation-delay: 2s;
 }
 
 .logo4 {
 	@apply tablet:col-start-3 tablet:row-start-4;
 	@apply desktop:col-start-4 desktop:row-start-3;
+
+	@apply animate-float;
+	animation-delay: 3s;
 }
 
 .logo5 {
 	@apply tablet:col-start-1 tablet:row-start-4;
 	@apply desktop:col-start-1 desktop:row-start-4;
+
+	@apply animate-float;
+	animation-delay: 4s;
 }
 
 .logo6 {
 	@apply tablet:col-start-2 tablet:row-start-5;
 	@apply desktop:col-start-3 desktop:row-start-4;
+
+	@apply animate-float;
+	animation-delay: 5s;
 }
 
 .logo7 {
 	@apply tablet:col-start-1 tablet:row-start-6;
 	@apply desktop:col-start-2 desktop:row-start-5;
+
+	@apply animate-float;
+	animation-delay: 6s;
 }
 
 .logo8 {
 	@apply tablet:col-start-3 tablet:row-start-7;
 	@apply desktop:col-start-4 desktop:row-start-5;
+
+	@apply animate-float;
+	animation-delay: 7s;
 }

@@ -1276,6 +1276,16 @@ packages:
       rollup: 3.26.2
     dev: false
 
+  /@splinetool/runtime@0.9.382:
+    resolution:
+      {
+        integrity: sha512-wamkLlpwcsB3WmJShLFBEcGQ6xlbKiubWCNsLXvsIMYcJt3VD7JgShLdHnKBhCCZFFh7/sdfBVAQJqN6aNzFgw==,
+      }
+    dependencies:
+      on-change: 4.0.2
+      semver-compare: 1.0.0
+    dev: false
+
   /@trysound/sax@0.2.0:
     resolution:
       {
@@ -4543,6 +4553,14 @@ packages:
     engines: { node: ">= 6" }
     dev: false
 
+  /on-change@4.0.2:
+    resolution:
+      {
+        integrity: sha512-cMtCyuJmTx/bg2HCpHo3ZLeF7FZnBOapLqZHr2AlLeJ5Ul0Zu2mUJJz051Fdwu/Et2YW04ZD+TtU+gVy0ACNCA==,
+      }
+    engines: { node: ^12.20.0 || ^14.13.1 || >=16.0.0 }
+    dev: false
+
   /once@1.4.0:
     resolution:
       {
@@ -5328,6 +5346,13 @@ packages:
     dependencies:
       extend-shallow: 2.0.1
       kind-of: 6.0.3
+    dev: false
+
+  /semver-compare@1.0.0:
+    resolution:
+      {
+        integrity: sha512-YM3/ITh2MJ5MtzaM429anh+x2jiLVjqILF4m4oyQB18W7Ggea7BfqdH/wGMK7dDiMghv/6WG7znWMwUDzJiXow==,
+      }
     dev: false
 
   /semver@7.5.4:

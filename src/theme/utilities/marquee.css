@@ -1,0 +1,48 @@
+:root {
+	--space: 2rem;
+}
+
+.marquee {
+	/* config */
+	--duration: 10s;
+	--gap: var(--space);
+
+	/* position */
+	@apply absolute z-[100];
+
+	/* flex */
+	@apply flex gap-[var(--gap)];
+
+	@apply overflow-hidden select-none;
+	@apply rotate-[-25deg];
+	@apply skew-y-[-3deg];
+
+	@apply translate-y-[-49.5rem];
+
+	/* gradient */
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-image: linear-gradient(135deg, #8bbd7f, #6f6f6f);
+}
+
+.marquee-group {
+	/* flex */
+	@apply flex shrink-0 items-center justify-around gap-[var(--gap)];
+
+	/* width */
+	@apply min-w-full;
+
+	/* animation */
+	animation: marquee-scroll var(--duration) linear infinite reverse;
+}
+
+@keyframes marquee-scroll {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(calc(-100% - var(--gap)));
+	}
+}

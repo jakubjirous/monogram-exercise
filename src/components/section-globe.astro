@@ -1,11 +1,33 @@
 ---
 import Section from "./section.astro";
 
+import supabase from "../assets/logo-supabase.svg";
+import prismic from "../assets/logo-prismic.svg";
+
 import sphere from "../assets/sphere.svg";
+import sphere2 from "../assets/shpere-v2.svg";
 ---
 
 <Section class="globe">
 	<div class="globe-sphere">
 		<img src={sphere.src} width={1279} height={1315} alt="Sphere" />
+		<!--<img src={sphere2.src} width={1317} height={1314} alt="Sphere" />-->
 	</div>
 </Section>
+
+<div class="marquee flex flex-row gap-8">
+	<div class="marquee-group">
+		<span class="text-red-500">Supabase</span>
+		<span>Prismic</span>
+		<!--<img src={supabase.src} height={93} alt="Logo Supabase" />-->
+		<!--<img src={prismic.src} height={93} alt="Logo Prismic" />-->
+		<!--<img src={supabase.src} height={93} alt="Logo Supabase" />-->
+		<!--<img src={prismic.src} height={93} alt="Logo Prismic" />-->
+	</div>
+	<div class="marquee-group" aria-hidden="true">
+		<!--<img src={supabase.src} height={93} alt="Logo Supabase" />-->
+		<!--<img src={prismic.src} height={93} alt="Logo Prismic" />-->
+		<!--<img src={supabase.src} height={93} alt="Logo Supabase" />-->
+		<!--<img src={prismic.src} height={93} alt="Logo Prismic" />-->
+	</div>
+</div>

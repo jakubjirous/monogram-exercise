@@ -104,23 +104,33 @@ module.exports = {
 				8: "8",
 			},
 			animation: {
+				"hi-there": "hi-there 2s ease infinite",
+				"heart-beat": "heart-beat 2s infinite ease-in-out alternate",
 				marque: "marque 10s linear infinite",
 				float: "float 6s ease-in-out infinite",
 			},
 			keyframes: {
+				"heart-beat": {
+					from: { transform: "scale(0.8)" },
+					to: { transform: "scale(1.2)" },
+				},
+				"hi-there": {
+					"30%": { transform: "scale(1.2)" },
+					"40%, 60%": { transform: "rotate(-20deg) scale(1.2)" },
+					"50%": { transform: "rotate(20deg) scale(1.2)" },
+					"70%": { transform: "rotate(0deg) scale(1.2)" },
+					"100%": { transform: "scale(1)" },
+				},
 				marque: {
 					"0%": { left: "0%" },
 					"100%": { left: "-100%" },
 				},
 				float: {
-					"0%": {
+					"0%, 100%": {
 						transform: "translateY(0)",
 					},
 					"50%": {
 						transform: "translateY(-1rem)",
-					},
-					"100%": {
-						transform: "translateY(0)",
 					},
 				},
 			},

@@ -56,9 +56,9 @@
 	@apply -z-10;
 }
 
-.hero-mouse {
+.hero-mouse-wrapper {
 	/* defaults */
-	@apply absolute bottom-0 right-0 left-0 mx-auto;
+	@apply absolute bottom-0 right-0 left-0 mx-auto flex justify-center;
 
 	/* scale */
 	@apply scale-50 tablet:scale-75 desktop:scale-100;
@@ -66,4 +66,8 @@
 	@apply translate-x-[-32vw] translate-y-[-29.8rem];
 	@apply tablet:translate-x-[-31.4vw] tablet:translate-y-[-34.4rem];
 	@apply desktop:translate-x-[-23rem] desktop:translate-y-[-36rem];
+}
+
+.hero-mouse {
+	@apply animate-hi-there;
 }
