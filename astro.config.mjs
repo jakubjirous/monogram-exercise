@@ -1,6 +1,7 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import image from "@astrojs/image";
+import vercel from '@astrojs/vercel/static';
 
 export default defineConfig({
 	site: "https://monogram-exercise-jakubjirous.vercel.app/",
@@ -15,5 +16,9 @@ export default defineConfig({
 	},
 	build: {
 		split: true
-	}
+	},
+	// output: 'server',
+	// adapter: vercel({
+	// 	analytics: true
+	// }),
 });
