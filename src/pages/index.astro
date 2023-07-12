@@ -8,15 +8,19 @@ import SectionApi from "@components/section-api.astro";
 import SectionGlobe from "@components/section-globe.astro";
 import SectionMarkup from "@components/section-markup.astro";
 import SectionAudit from "@components/section-audit.astro";
+
+import { SectionSpline } from "../components/section-spline";
 ---
 
 <Layout>
+	<SectionSpline client:only="react" />
+
 	<Lines />
 	<SectionHero />
 	<SectionJavascript />
 	<SectionLogo />
 	<SectionApi />
-	<SectionGlobe />
+	<!--<SectionGlobe />-->
 	<SectionMarkup />
 	<SectionAudit />
 </Layout>
@@ -36,3 +40,9 @@ import SectionAudit from "@components/section-audit.astro";
 
 	observeElements("counter-hide", "counter-show");
 </script>
+
+<style>
+	canvas {
+		display: block;
+	}
+</style>
