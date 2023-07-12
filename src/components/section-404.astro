@@ -1,0 +1,35 @@
+---
+import { getImage } from "@astrojs/image";
+import Container from "./container.astro";
+import Section from "./section.astro";
+
+import pattern from "../assets/bg-pattern.png";
+
+const optimizedPattern = await getImage({
+	src: pattern,
+	quality: 20,
+	format: "webp",
+	alt: "Pattern",
+});
+---
+
+<Section>
+	<Container>
+		<div class="grid min-h-screen items-center">
+			<div>
+				<h1 class="hero-heading scroll-hide">
+					<span
+						class="hero-pattern"
+						style={`background-image: url(${optimizedPattern.src})`}>404</span
+					>
+					Not Found
+				</h1>
+				<p class="hero-content scroll-hide delay-200">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu augue
+					massa, tincidunt proin nunc viverra tristique tempor, ipsum. At lectus
+					vel pretium tempor ut dui vivamus sit.
+				</p>
+			</div>
+		</div>
+	</Container>
+</Section>

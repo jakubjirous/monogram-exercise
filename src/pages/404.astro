@@ -1,11 +1,14 @@
 ---
 import Layout from "@layouts/layout.astro";
-import Container from "@components/container.astro";
+import Section404 from "../components/section-404.astro";
 ---
 
 <Layout title="404 Not Found">
-	<Container>
-		<h1 class="h1">404</h1>
-		<p class="">Page not found.</p>
-	</Container>
+	<Section404 />
 </Layout>
+
+<script>
+	import { observeElements } from "../utils/observeElements";
+
+	observeElements("scroll-hide", "scroll-show");
+</script>
